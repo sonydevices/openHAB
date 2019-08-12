@@ -1,0 +1,13 @@
+{
+	"ignore": [],
+	"convert": [
+		{
+			"modelName": "TV Schlafzimmer",
+			"convName": "KD-43XD8005"
+		},
+		{
+			"modelName": "BRAVIA-DK",
+			"convName": "KD-49X8505B"
+		}
+	]
+}
