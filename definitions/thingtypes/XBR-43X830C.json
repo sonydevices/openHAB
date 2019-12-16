@@ -19,7 +19,7 @@
 	},
 	"channels": [
 		{
-			"channelId": "videoScreen#multiscreenmode2",
+			"channelId": "videoScreen#multiscreenmode",
 			"channelType": "scalarvideoscreenmultiscreenmode",
 			"properties": {
 				"propLen": "0",

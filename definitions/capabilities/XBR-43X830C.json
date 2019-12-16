@@ -508,7 +508,7 @@
 					"variation": 0
 				},
 				{
-					"methodName": "setAudioVolume2",
+					"methodName": "setAudioVolume",
 					"parms": [
 						"{\"target\":\"string\",\"volume\":\"string\"}"
 					],
