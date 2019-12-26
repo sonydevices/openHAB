@@ -1,0 +1,3328 @@
+{
+	"service": "scalar",
+	"configUri": "thing-type:sony:scalarconfig",
+	"modelName": "KD-49XD8005",
+	"label": "Sony KD-49XD8005",
+	"description": "Sony Scalar Web",
+	"channelGroups": {
+		"cec": "CEC",
+		"accessControl": "Access Control",
+		"system": "System",
+		"appControl": "Application Control",
+		"encryption": "Encryption",
+		"browser": "Browser",
+		"audio": "Audio",
+		"avContent": "A/V Content",
+		"videoScreen": "Video Screen",
+		"contentshare": "Content Share",
+		"guide": "Guide"
+	},
+	"channels": [
+		{
+			"channelId": "audio#mute-speaker",
+			"channelType": "scalaraudiomute",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "mute",
+				"channelId": "speaker",
+				"prop-0": "speaker"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "audio#volume-speaker",
+			"channelType": "scalaraudiovolume",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "volume",
+				"channelId": "speaker",
+				"prop-0": "speaker"
+			},
+			"state": {
+				"step": 1,
+				"minimum": 0,
+				"maximum": 100,
+				"readonly": false,
+				"options": {}
+			}
+		},
+		{
+			"channelId": "avContent#cn_albumname",
+			"channelType": "scalarwebavcontrolcontentalbumname",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_albumname",
+				"channelId": "cn_albumname"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_applicationname",
+			"channelType": "scalarwebavcontrolplapplicationname",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_applicationname",
+				"channelId": "cn_applicationname"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_artist",
+			"channelType": "scalarwebavcontrolcontentartist",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_artist",
+				"channelId": "cn_artist"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_audiochannel",
+			"channelType": "scalarwebavcontrolcontentaudiochannel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_audiochannel",
+				"channelId": "cn_audiochannel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_audiocodec",
+			"channelType": "scalarwebavcontrolcontentaudiocodec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_audiocodec",
+				"channelId": "cn_audiocodec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_audiofrequency",
+			"channelType": "scalarwebavcontrolcontentaudiofrequency",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_audiofrequency",
+				"channelId": "cn_audiofrequency"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_bivleassetid",
+			"channelType": "scalarwebavcontrolcontentbivlassetid",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_bivleassetid",
+				"channelId": "cn_bivleassetid"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_bivlprovider",
+			"channelType": "scalarwebavcontrolcontentbivlprovider",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_bivlprovider",
+				"channelId": "cn_bivlprovider"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_bivlserviceid",
+			"channelType": "scalarwebavcontrolcontentbivlserviceid",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_bivlserviceid",
+				"channelId": "cn_bivlserviceid"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_broadcastfreq",
+			"channelType": "scalarwebavcontrolcontentbroadcastfreq",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_broadcastfreq",
+				"channelId": "cn_broadcastfreq"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_broadcastfreqband",
+			"channelType": "scalarwebavcontrolcontentbroadcastband",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_broadcastfreqband",
+				"channelId": "cn_broadcastfreqband"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_channelname",
+			"channelType": "scalarwebavcontrolcontentchannelname",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_channelname",
+				"channelId": "cn_channelname"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_channelsurfingvisibility",
+			"channelType": "scalarwebavcontrolcontentchannelsurfingvisibility",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_channelsurfingvisibility",
+				"channelId": "cn_channelsurfingvisibility"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_chaptercount",
+			"channelType": "scalarwebavcontrolcontentchaptercount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_chaptercount",
+				"channelId": "cn_chaptercount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_chapterindex",
+			"channelType": "scalarwebavcontrolplchapterindex",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_chapterindex",
+				"channelId": "cn_chapterindex"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_childcount",
+			"channelType": "scalarwebavcontrolcontentchildcount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_childcount",
+				"channelId": "cn_childcount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_clipcount",
+			"channelType": "scalarwebavcontrolcontentclipcount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_clipcount",
+				"channelId": "cn_clipcount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_contentkind",
+			"channelType": "scalarwebavcontrolcontentcontentkind",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_contentkind",
+				"channelId": "cn_contentkind"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_contenttype",
+			"channelType": "scalarwebavcontrolcontentcontenttype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_contenttype",
+				"channelId": "cn_contenttype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_createdtime",
+			"channelType": "scalarwebavcontrolcontentcreatedtime",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_createdtime",
+				"channelId": "cn_createdtime"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_dabcomponentlabel",
+			"channelType": "scalarwebavcontrolcontentdabcomponentlabel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_dabcomponentlabel",
+				"channelId": "cn_dabcomponentlabel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_dabdynamiclabel",
+			"channelType": "scalarwebavcontrolcontentdabdynamiclabel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_dabdynamiclabel",
+				"channelId": "cn_dabdynamiclabel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_dabensemblelabel",
+			"channelType": "scalarwebavcontrolcontentdabensemblelabel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_dabensemblelabel",
+				"channelId": "cn_dabensemblelabel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_dabservicelabel",
+			"channelType": "scalarwebavcontrolcontentdabservicelabel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_dabservicelabel",
+				"channelId": "cn_dabservicelabel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_description",
+			"channelType": "scalarwebavcontrolcontentdescription",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_description",
+				"channelId": "cn_description"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_directremotenum",
+			"channelType": "scalarwebavcontrolcontentdirectremotenum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_directremotenum",
+				"channelId": "cn_directremotenum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_dispnum",
+			"channelType": "scalarwebavcontrolcontentdispnum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_dispnum",
+				"channelId": "cn_dispnum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_durationmsec",
+			"channelType": "scalarwebavcontrolcontentdurationmsec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_durationmsec",
+				"channelId": "cn_durationmsec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_durationsec",
+			"channelType": "scalarwebavcontrolcontentdurationsec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_durationsec",
+				"channelId": "cn_durationsec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_epgvisibility",
+			"channelType": "scalarwebavcontrolcontentepgvisibility",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_epgvisibility",
+				"channelId": "cn_epgvisibility"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_eventid",
+			"channelType": "scalarwebavcontrolcontenteventid",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_eventid",
+				"channelId": "cn_eventid"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_fileno",
+			"channelType": "scalarwebavcontrolcontentfileno",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_fileno",
+				"channelId": "cn_fileno"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_filesizebyte",
+			"channelType": "scalarwebavcontrolcontentfilesizebyte",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_filesizebyte",
+				"channelId": "cn_filesizebyte"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_folderno",
+			"channelType": "scalarwebavcontrolcontentfolderno",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_folderno",
+				"channelId": "cn_folderno"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_genre",
+			"channelType": "scalarwebavcontrolcontentgenre",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_genre",
+				"channelId": "cn_genre"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_globalplaybackcount",
+			"channelType": "scalarwebavcontrolcontentglobalplaybackcount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_globalplaybackcount",
+				"channelId": "cn_globalplaybackcount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_hasresume",
+			"channelType": "scalarwebavcontrolcontenthasresume",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_hasresume",
+				"channelId": "cn_hasresume"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_idx",
+			"channelType": "scalarwebavcontrolcontentidx",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_idx",
+				"channelId": "cn_idx"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_IS3D",
+			"channelType": "scalarwebavcontrolcontentis3d",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_IS3D",
+				"channelId": "cn_IS3D"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_is4k",
+			"channelType": "scalarwebavcontrolcontentis4k",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_is4k",
+				"channelId": "cn_is4k"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isalreadyplayed",
+			"channelType": "scalarwebavcontrolcontentisalreadyplayed",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isalreadyplayed",
+				"channelId": "cn_isalreadyplayed"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isautodelete",
+			"channelType": "scalarwebavcontrolcontentisautodelete",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isautodelete",
+				"channelId": "cn_isautodelete"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isbrowsable",
+			"channelType": "scalarwebavcontrolcontentisbrowsable",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isbrowsable",
+				"channelId": "cn_isbrowsable"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isnew",
+			"channelType": "scalarwebavcontrolcontentisnew",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isnew",
+				"channelId": "cn_isnew"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isplayable",
+			"channelType": "scalarwebavcontrolcontentisplayable",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isplayable",
+				"channelId": "cn_isplayable"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isplaylist",
+			"channelType": "scalarwebavcontrolcontentisplaylist",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isplaylist",
+				"channelId": "cn_isplaylist"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isprotected",
+			"channelType": "scalarwebavcontrolcontentisprotected",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isprotected",
+				"channelId": "cn_isprotected"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_issoundphoto",
+			"channelType": "scalarwebavcontrolcontentissoundphoto",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_issoundphoto",
+				"channelId": "cn_issoundphoto"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_mediatype",
+			"channelType": "scalarwebavcontrolcontentmediatype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_mediatype",
+				"channelId": "cn_mediatype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_originaldispnum",
+			"channelType": "scalarwebavcontrolcontentoriginaldispnum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_originaldispnum",
+				"channelId": "cn_originaldispnum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_output",
+			"channelType": "scalarwebavcontrolcontentoutput",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_output",
+				"channelId": "cn_output"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentalcountry",
+			"channelType": "scalarwebavcontrolcontentparentalcountry",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentalcountry",
+				"channelId": "cn_parentalcountry"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentalrating",
+			"channelType": "scalarwebavcontrolcontentparentalrating",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentalrating",
+				"channelId": "cn_parentalrating"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentalsystem",
+			"channelType": "scalarwebavcontrolcontentparentalsystem",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentalsystem",
+				"channelId": "cn_parentalsystem"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentindex",
+			"channelType": "scalarwebavcontrolcontentparentindex",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentindex",
+				"channelId": "cn_parentindex"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parenturi",
+			"channelType": "scalarwebavcontrolcontentparenturi",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parenturi",
+				"channelId": "cn_parenturi"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_playlistname",
+			"channelType": "scalarwebavcontrolcontentplaylistname",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_playlistname",
+				"channelId": "cn_playlistname"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_podcastname",
+			"channelType": "scalarwebavcontrolcontentpodcastname",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_podcastname",
+				"channelId": "cn_podcastname"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_productid",
+			"channelType": "scalarwebavcontrolcontentproductid",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_productid",
+				"channelId": "cn_productid"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_programmediatype",
+			"channelType": "scalarwebavcontrolcontentprogrammediatype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_programmediatype",
+				"channelId": "cn_programmediatype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_programnum",
+			"channelType": "scalarwebavcontrolcontentprogramnum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_programnum",
+				"channelId": "cn_programnum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_programservicetype",
+			"channelType": "scalarwebavcontrolcontentprogramservicetype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_programservicetype",
+				"channelId": "cn_programservicetype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_programtitle",
+			"channelType": "scalarwebavcontrolcontentprogramtitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_programtitle",
+				"channelId": "cn_programtitle"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_remoteplaytype",
+			"channelType": "scalarwebavcontrolcontentremoteplaytype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_remoteplaytype",
+				"channelId": "cn_remoteplaytype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_repeattype",
+			"channelType": "scalarwebavcontrolcontentrepeattype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_repeattype",
+				"channelId": "cn_repeattype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_selected",
+			"channelType": "scalarwebavcontrolcontentselected",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_selected",
+				"channelId": "cn_selected"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_service",
+			"channelType": "scalarwebavcontrolcontentservice",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_service",
+				"channelId": "cn_service"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_sizemb",
+			"channelType": "scalarwebavcontrolcontentsizemb",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_sizemb",
+				"channelId": "cn_sizemb"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_source",
+			"channelType": "scalarwebavcontrolcontentsource",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_source",
+				"channelId": "cn_source"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_sourcelabel",
+			"channelType": "scalarwebavcontrolcontentsourcelabel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_sourcelabel",
+				"channelId": "cn_sourcelabel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_startdatetime",
+			"channelType": "scalarwebavcontrolcontentstartdatetime",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_startdatetime",
+				"channelId": "cn_startdatetime"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_state",
+			"channelType": "scalarwebavcontrolcontentstate",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_state",
+				"channelId": "cn_state"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_statesupplement",
+			"channelType": "scalarwebavcontrolcontentstatesupplement",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_statesupplement",
+				"channelId": "cn_statesupplement"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_storageuri",
+			"channelType": "scalarwebavcontrolcontentstorageuri",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_storageuri",
+				"channelId": "cn_storageuri"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_subtitlelanguage",
+			"channelType": "scalarwebavcontrolcontentsubtitlelanguage",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_subtitlelanguage",
+				"channelId": "cn_subtitlelanguage"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_subtitletitle",
+			"channelType": "scalarwebavcontrolcontentsubtitletitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_subtitletitle",
+				"channelId": "cn_subtitletitle"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_synccontentpriority",
+			"channelType": "scalarwebavcontrolcontentsynccontentpriority",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_synccontentpriority",
+				"channelId": "cn_synccontentpriority"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_title",
+			"channelType": "scalarwebavcontrolcontenttitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_title",
+				"channelId": "cn_title"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_totalcount",
+			"channelType": "scalarwebavcontrolcontenttotalcount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_totalcount",
+				"channelId": "cn_totalcount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_tripletstr",
+			"channelType": "scalarwebavcontrolcontenttripletstr",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_tripletstr",
+				"channelId": "cn_tripletstr"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_uri",
+			"channelType": "scalarwebavcontrolcontenturi",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_uri",
+				"channelId": "cn_uri"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_usercontentflag",
+			"channelType": "scalarwebavcontrolcontentusercontentflag",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_usercontentflag",
+				"channelId": "cn_usercontentflag"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_videocodec",
+			"channelType": "scalarwebavcontrolcontentvideocodec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_videocodec",
+				"channelId": "cn_videocodec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_visibility",
+			"channelType": "scalarwebavcontrolcontentvisibility",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_visibility",
+				"channelId": "cn_visibility"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-composite1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-scart1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-widi1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-composite1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-scart1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-widi1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-composite1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-scart1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-widi1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-composite1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-scart1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-widi1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-composite1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-scart1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-widi1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-composite1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-scart1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-widi1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_bivlassetid-Main",
+			"channelType": "scalarwebavcontrolplbivlassetid",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_bivlassetid",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_bivlprovider-Main",
+			"channelType": "scalarwebavcontrolplbivlprovider",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_bivlprovider",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_bivlserviceid-Main",
+			"channelType": "scalarwebavcontrolplbivlserviceid",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_bivlserviceid",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_cmd-Main",
+			"channelType": "scalarwebavcontrolplcommand",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_cmd",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_dispnum-Main",
+			"channelType": "scalarwebavcontrolpldispnum",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_dispnum",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_durationsec-Main",
+			"channelType": "scalarwebavcontrolpldurationsec",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_durationsec",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_mediatype-Main",
+			"channelType": "scalarwebavcontrolplmediatype",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_mediatype",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_originaldispnum-Main",
+			"channelType": "scalarwebavcontrolploriginaldispnum",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_originaldispnum",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_playspeed-Main",
+			"channelType": "scalarwebavcontrolplplayspeed",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_playspeed",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_presetid-Main",
+			"channelType": "scalarwebavcontrolplpreset",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_presetid",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_programnum-Main",
+			"channelType": "scalarwebavcontrolplprogramnum",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_programnum",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_programtitle-Main",
+			"channelType": "scalarwebavcontrolplprogramtitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_programtitle",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_source-Main",
+			"channelType": "scalarwebavcontrolplsource",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_source",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_startdatetime-Main",
+			"channelType": "scalarwebavcontrolplstartdatetime",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_startdatetime",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_title-Main",
+			"channelType": "scalarwebavcontrolpltitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_title",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_tripletstr-Main",
+			"channelType": "scalarwebavcontrolpltripletstr",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_tripletstr",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_uri-Main",
+			"channelType": "scalarwebavcontrolpluri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_uri",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcountry",
+			"channelType": "scalarwebavcontrolprratingcountry",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcountry",
+				"channelId": "pr_ratingcountry"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypecaenglish",
+			"channelType": "scalarwebavcontrolprratingcustomtypecaenglish",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypecaenglish",
+				"channelId": "pr_ratingcustomtypecaenglish"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypecafrench",
+			"channelType": "scalarwebavcontrolprratingcustomtypecafrench",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypecafrench",
+				"channelId": "pr_ratingcustomtypecafrench"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypempaa",
+			"channelType": "scalarwebavcontrolprratingcustomtypempaa",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypempaa",
+				"channelId": "pr_ratingcustomtypempaa"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypetv",
+			"channelType": "scalarwebavcontrolprratingcustomtypetv",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypetv",
+				"channelId": "pr_ratingcustomtypetv"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingtypeage",
+			"channelType": "scalarwebavcontrolprratingtypeage",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingtypeage",
+				"channelId": "pr_ratingtypeage"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingtypesony",
+			"channelType": "scalarwebavcontrolprratingtypesony",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingtypesony",
+				"channelId": "pr_ratingtypesony"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_unratedlock",
+			"channelType": "scalarwebavcontrolprunratedlock",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_unratedlock",
+				"channelId": "pr_unratedlock"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#ps_channel-dvbs",
+			"channelType": "scalarwebavcontrolpresetchannel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "ps_channel",
+				"channelId": "dvbs",
+				"prop-0": "tv:dvbs"
+			},
+			"state": {
+				"readonly": false,
+				"options": {
+					"0130": "SES 75",
+					"0372": "Bibel TV HD",
+					"0373": "Schau TV",
+					"0131": "SOPHIA TV",
+					"0370": "Volksmusik",
+					"0371": "ATV2",
+					"0369": "ORF SPORT+",
+					"0127": "M.FORMULA1",
+					"0128": "QVC HD",
+					"0367": "NICKELODEON TEEN",
+					"0125": "MTV ESPAÑA",
+					"0126": "GOL",
+					"0368": "Al Jazeera English HD",
+					"0365": "BBC World News Europe HD",
+					"0123": "BARÇA TV",
+					"0366": "INSIGHT TV HD",
+					"0124": "EUROSPORT 1",
+					"0363": "MB LIVE",
+					"0121": "BOING",
+					"0364": "WARNER TV",
+					"0122": "ENERGY",
+					"0129": "HSE24 HD",
+					"0141": "M. SERIES",
+					"0383": "FOX LIFE HD",
+					"0142": "NICK JR",
+					"0384": "M.Seriesmania HD",
+					"0381": "Service 13233",
+					"0382": "M.LCAMPEONES",
+					"0140": "ALQUILER XY",
+					"0380": "Service 13232",
+					"0138": "MULTIDEPORTE",
+					"0139": "MULTIDEP.5",
+					"0378": "ATVsmart",
+					"0136": "ALQUILER 2",
+					"0379": "Service 13231",
+					"0137": "BEINLALIGA8",
+					"0134": "WELT HD",
+					"0376": "ATV HD",
+					"0377": "MELODIE TV",
+					"0135": "ALQUILER 1",
+					"0374": "Starparadies AT",
+					"0132": "Genius Plus",
+					"0375": "HOPE Channel HD",
+					"0133": "Comedy Central HD AT",
+					"0152": "SUNDANCE",
+					"0394": "ORF2V HD",
+					"1000": "ORF2 O",
+					"0395": "ORF III HD",
+					"0153": "MULTIFUT. 4",
+					"0392": "ORF2S HD",
+					"0150": "MULTIDEPORTE",
+					"0393": "ORF2T HD",
+					"0151": "CANAL ORBE21",
+					"0390": "ORF2B HD",
+					"0391": "ORF2O HD",
+					"0149": "BEIN MAX 1",
+					"0389": "ORF2K HD",
+					"0147": "BEIN MAX 6",
+					"0148": "BEIN MAX 7",
+					"0387": "COMEDYCENTRALHD",
+					"0145": "BEINLALIGA4",
+					"0388": "ORF2St HD",
+					"0146": "M.Partidazo",
+					"0143": "MEZZO",
+					"0385": "M. GOLF HD",
+					"0144": "LALIGATVBAR1",
+					"0386": "COSMO HD",
+					"1011": "RiC",
+					"0163": "M. ACCIÓN HD",
+					"0164": "M. DCINE HD",
+					"1010": "Folx TV",
+					"0161": "BEIN LALIGA",
+					"0162": "FOX HD",
+					"0160": "M. FÚTBOL HD",
+					"1008": "ORF2E",
+					"1007": "HITRADIO OE3",
+					"0158": "Disney Channel HD Austria",
+					"1006": "ATV",
+					"1005": "ORF2 K",
+					"0159": "Deluxe Music HD Austria",
+					"1004": "ORF2 St",
+					"0398": "Aristo.TV",
+					"0156": "1-2-3.tv HD",
+					"0399": "R9 Oesterreich HD",
+					"0157": "QVC2 HD",
+					"1003": "ORF2 V",
+					"1002": "ORF2 T",
+					"0396": "ORF SPORT+ HD",
+					"0154": "MULTIFUT. 1",
+					"0397": "flimmit",
+					"1001": "ORF2 S",
+					"0155": "HSE24 EXTRA HD",
+					"1009": "Mei Musi TV",
+					"1022": "OCS MAX",
+					"0174": "0174",
+					"1021": "BRAVA",
+					"0175": "0175",
+					"1020": "OM TV",
+					"0172": "0172",
+					"0173": "0173",
+					"0170": "PORTADA",
+					"0171": "GUÍA",
+					"1019": "OL TV",
+					"1018": "COLMAX TV",
+					"1017": "MULTISPORTS 4",
+					"0169": "BAJO DEMANDA",
+					"1016": "MULTISPORTS 3",
+					"0167": "n-tv HD",
+					"1015": "MULTISPORTS 2",
+					"0168": "RADIOS",
+					"1014": "MULTISPORTS 1",
+					"0165": "HOLLYWOODHD",
+					"1013": "CINE+ CLUB",
+					"1012": "gotv",
+					"0166": "BEIN LALIGA",
+					"1033": "F3 LANGUEDOCROU",
+					"0185": "CONTRATO",
+					"0186": "TEST TÉCNICO",
+					"1032": "F3 ALSACE",
+					"0183": "Juvelirochka",
+					"1031": "F3 NORD PDC",
+					"1030": "F3 ALPES",
+					"0184": "0184",
+					"0181": "0181",
+					"0182": "TBN Russia",
+					"0180": "0180",
+					"1029": "F3 CHAMP ARDENNE",
+					"1028": "F3 POITOUCHAR",
+					"1027": "F3 BOURGOGNE",
+					"1026": "F3 CENTRE",
+					"0178": "ALQUILER",
+					"0179": "PORTADA",
+					"1025": "F3 COTE D'AZUR",
+					"1024": "F3 PAYS DE LOIRE",
+					"0176": "ALQUILER",
+					"0177": "YOL TV",
+					"1023": "F3 BNORMANDIE",
+					"1044": "F3 PICARDIE",
+					"0196": "0196",
+					"1043": "F3 PARIS IDF",
+					"0197": "0197",
+					"1042": "F3 MIDI PYRENEES",
+					"0194": "0194",
+					"1041": "F3 LORRAINE",
+					"0195": "0195",
+					"1040": "F3 LIMOUSIN",
+					"0192": "0192",
+					"0193": "8 TV RU",
+					"0190": "TEST_CSD4",
+					"0191": "TEST_CSD5",
+					"1039": "F3 BRETAGNE",
+					"1038": "F3 AUVERGNE",
+					"0189": "TEST_CSD3",
+					"1037": "F3 AQUITAINE",
+					"1036": "F3 HNORMANDIE",
+					"0187": "TEST_CSD1",
+					"1035": "F3 PROV ALPES",
+					"0188": "TEST_CSD2",
+					"1034": "F3 CORSEVIASTELLA",
+					"1055": "Sky Cinema Hits HD",
+					"1054": "Eurosport360HD 4",
+					"1053": "phoenix HD",
+					"1052": "Radio Bremen HD",
+					"1051": "ARD-alpha HD",
+					"1050": "Eurosport360HD 5",
+					"1048": "COLMAX TV",
+					"1046": "F3 FRANCHE COMTE",
+					"0198": "0198",
+					"1045": "F3 RHONE ALPES",
+					"0199": "0199",
+					"1060": "MTV ROCKS",
+					"1058": "STEST2",
+					"1057": "STEST1",
+					"1056": "Fox HD",
+					"7400": "MULTISPORTS",
+					"7402": "MOSAIQUE BEIN SPORTS",
+					"7401": "MOSAIQUE",
+					"7411": ".",
+					"7410": "RADIOS 3",
+					"7413": "MY MTV",
+					"7412": "DOWNLOAD R7 G5 SAMSUNG",
+					"7404": "DOWNLOAD R7 G5+ SAGEM",
+					"7403": "CLIQUE.TV",
+					"7406": "DOWNLOAD R7 G5 PACE",
+					"7405": "MES VIDEOS",
+					"7408": "RADIOS 1",
+					"7407": "RADIOS 2",
+					"7409": "RF",
+					"7420": "DOWNLOAD CPRO V2 9134",
+					"7422": "DOWNLOAD G5 PACE",
+					"7421": "DOWNLOAD G5 SAMSUNG",
+					"7424": "DOWNLOAD G5+ SAGEM",
+					"7423": "DOWNLOAD G5+ PACE",
+					"7415": "CANAL A LA DEMANDE",
+					"7414": "MON NICK JUNIOR",
+					"7417": "CANAL VOD",
+					"7416": "6PLAY",
+					"7419": "CANALPLAY",
+					"7418": "ESPACE CLIENT",
+					"7431": "PASS PINK X",
+					"7430": "MYTF1",
+					"7433": "OTA REDSAT",
+					"7432": "DONWLOAD SUISSE",
+					"7435": "DOWNLOAD TNTSAT 9192",
+					"7434": "DOWNLOAD TNTSAT 9191",
+					"7426": "LE PORN",
+					"7425": "DOWNLOAD R7 G5+ PACE",
+					"7428": "PASS XXL DORCEL",
+					"7427": "PASS SERIES",
+					"7429": "DIAGNOSTIC TECHNIQUE",
+					"7440": "EPG Nagraguide",
+					"7442": "ASTRA SDT",
+					"7441": "ASTRA SDT",
+					"7202": "Radio Maryja",
+					"7201": "RADIOS ESP",
+					"0808": "VOX CH",
+					"7204": "RNE RADIO 1",
+					"7203": "TSR Turkce",
+					"0809": "RTL CH",
+					"7445": "Panasonic Viera",
+					"0806": "HSE24 EXTRA",
+					"7437": "DATA SYSTEM[98]",
+					"7436": "DOWNLOAD TNTSAT 9193",
+					"0807": "#VAMOS",
+					"0804": "RTL2 Austria",
+					"7439": "Downl CAM 2",
+					"0805": "SUPER RTL A",
+					"7438": "Downl CAM 1",
+					"0802": "RTL Austria",
+					"0803": "VOX Austria",
+					"0800": "INFOSPORT+",
+					"0801": "C8",
+					"7211": "Dlf",
+					"7210": "Dlf Kultur",
+					"7455": "Kathrein Download",
+					"7213": "DRadio DokDeb",
+					"7212": "Dlf Nova",
+					"7457": "SES-LCN2",
+					"7215": "ERF Plus",
+					"0819": "EQUIDIA LIVE",
+					"7214": "ROCK ANTENNE",
+					"0810": "13EME RUE",
+					"0817": "SEASONS",
+					"7206": "RNE RADIO 4",
+					"7205": "RNE RADIO 3",
+					"0818": "EQUIDIA LIFE",
+					"7208": "RNE RADIO CLASICA",
+					"0815": "PARAMOUNT CHANNEL",
+					"7207": "RNE RADIO 5 TODO NOTICIAS",
+					"0816": "LIBIDO TV",
+					"0813": "OCS GEANTS",
+					"0814": "VOYAGE",
+					"7209": "RNE RADIO EXTERIOR DE ESPAÑA",
+					"0811": "DISNEY JUNIOR",
+					"0812": "SYFY",
+					"7220": "Bayern 1",
+					"7461": "SDMS Service 2",
+					"7222": "BAYERN 3",
+					"7221": "Bayern 2",
+					"7224": "B5 aktuell",
+					"7223": "BR-KLASSIK",
+					"7226": "PULS",
+					"7225": "BAYERN plus",
+					"7460": "SDMS Service 1",
+					"0820": "MULTISPORTS 6",
+					"0821": "AB MOTEURS",
+					"7217": "Life Channel CH",
+					"7459": "GFD Service",
+					"0828": "ACTION",
+					"0829": "MANGAS",
+					"7216": "ERF Pop",
+					"7458": "BEM Service",
+					"0826": "TREK",
+					"7219": "ANTENNE BAYERN",
+					"0827": "toute L Histoire",
+					"7218": "sunshine live",
+					"0824": "Science et Vie",
+					"0825": "XXL",
+					"0822": "AB1",
+					"0823": "ANIMAUX",
+					"7231": "hr3",
+					"7230": "hr2",
+					"7233": "YOU FM",
+					"7232": "hr4",
+					"7235": "MDR SACHSEN DD",
+					"7234": "hr-iNFO",
+					"7237": "MDR THÜRINGEN EF",
+					"7236": "MDR S-ANHALT MD",
+					"0831": "CHASSE ET PECHE",
+					"0832": "XXL",
+					"0830": "RTL9",
+					"0839": "Sky Sport 5 HD",
+					"7228": "B5 plus",
+					"7227": "BR Heimat",
+					"0837": "Sky Sport Bundesliga 4 HD",
+					"7229": "hr1",
+					"0838": "Eurosport360HD 3",
+					"0835": "Sky Sport News HD",
+					"0836": "Sky Sport Bundesliga 1 HD",
+					"0833": "M. eSports",
+					"7242": "MDR KLASSIK",
+					"7241": "MDR AKTUELL",
+					"7244": "NDR Kultur",
+					"7243": "NDR 2 NDS",
+					"7246": "N-JOY",
+					"7245": "NDR Info NDS",
+					"7248": "NDR1 Welle Nord KI",
+					"7247": "NDR 90,3",
+					"7240": "MDR SPUTNIK",
+					"0600": "MTV HITS",
+					"0842": "INSIGHT TV UHD",
+					"0601": "MTV",
+					"0843": "INSIGHT TV UHD SPAIN",
+					"0840": "MCM TOP",
+					"0841": "MCM",
+					"7239": "MDR JUMP",
+					"0608": "6TER",
+					"0609": "TRACE AFRICA",
+					"7238": "MDR KULTUR",
+					"0848": "Sky Sport Bundesliga 5 HD",
+					"0606": "PINK X",
+					"0607": "MEZZO",
+					"0849": "Eurosport 1 HD",
+					"0846": "Sky Sport 6 HD",
+					"0604": "OCS CITY",
+					"0605": "NICKELODEON",
+					"0847": "Eurosport360HD 4",
+					"0844": "INSIGHT UHD Russia",
+					"0602": "FRANCEINFO:",
+					"0845": "PEARL TV 4K UHD",
+					"0603": "HISTOIRE",
+					"7253": "NDR Plus",
+					"7252": "NDR Blue",
+					"7255": "Bremen Zwei",
+					"7254": "Bremen Eins",
+					"7257": "Inforadio",
+					"7256": "Bremen Vier",
+					"7259": "Antenne Brandenburg",
+					"7258": "rbbKultur",
+					"7251": "NDR Info Spez.",
+					"7250": "NDR 1 Nieders. HAN",
+					"0611": "hr-fernsehen",
+					"0853": "History HD",
+					"0854": "FRANCE 4",
+					"0612": "BR Fernsehen Nord",
+					"0851": "Sky Cinema Action HD",
+					"0852": "kabel eins HD",
+					"0610": "Das Erste",
+					"0850": "Sport1+ HD",
+					"0619": "VICELAND",
+					"7249": "NDR 1 Radio MV SN",
+					"0617": "SUNDANCE TV",
+					"0859": "RFM TV",
+					"0618": "M6 BOUTIQUE",
+					"0857": "NRJ 12",
+					"0615": "BEIN SPORTS MAX 6",
+					"0858": "TV BREIZH",
+					"0616": "NRJ HITS",
+					"0855": "NT1",
+					"0613": "BEIN SPORTS MAX 4",
+					"0856": "TMC",
+					"0614": "BEIN SPORTS MAX 5",
+					"7264": "SR 2 KulturRadio",
+					"7263": "SR 1 Europawelle",
+					"7266": "SWR1 BW",
+					"7265": "SR 3 Saarlandwelle",
+					"7268": "SWR2",
+					"7267": "SWR1 RP",
+					"7269": "SWR3",
+					"7260": "rbb 88.8",
+					"7262": "Fritz",
+					"7261": "radioeins",
+					"0864": "NOLLYWOOD TV",
+					"0622": "E! Entertainm. HD",
+					"0623": "TNT Comedy HD",
+					"0865": "FOOT+ 24/24",
+					"0620": "NICKELODEON+1",
+					"0862": "DORCEL TV",
+					"0863": "MELODY",
+					"0621": ".",
+					"0860": "TIJI",
+					"0861": "DORCEL XXX",
+					"0628": "Sky Sport Bundesliga 10 HD",
+					"0629": "A&E",
+					"0868": "WDR Düsseldorf",
+					"0626": "BLUE MOVIE HD",
+					"0869": "WDR Essen",
+					"0627": "Motorvision TV",
+					"0866": "WDR Bielefeld",
+					"0624": "VOX HD",
+					"0867": "WDR Dortmund",
+					"0625": "Sky Select HD",
+					"7275": "WDR 2 Rheinland",
+					"7274": "1LIVE",
+					"7277": "WDR 4",
+					"7276": "WDR 3",
+					"7279": "COSMO",
+					"7278": "WDR 5",
+					"7271": "SWR4 RP",
+					"7270": "SWR4 BW",
+					"7273": "SWR Aktuell",
+					"7272": "DASDING",
+					"0875": "WDR HD Essen",
+					"0633": "Boomerang",
+					"0876": "WDR HD Münster",
+					"0634": "Cartoon Network",
+					"0631": "kabel eins HD Austria",
+					"0873": "WDR HD Dortmund",
+					"0874": "WDR HD Köln",
+					"0632": "Eurosport360HD 9",
+					"0871": "WDR Siegen",
+					"0872": "WDR HD Bielefeld",
+					"0630": "Sky Sport 11 HD",
+					"0870": "WDR Münster",
+					"0639": "BEIN SPORTS MAX 8",
+					"0879": "WDR Test A",
+					"0637": "A LA UNE",
+					"0638": "BEIN SPORTS MAX 7",
+					"0877": "WDR HD Siegen",
+					"0635": "BFM TV",
+					"0878": "Radio Bremen TV",
+					"0636": "BFM BUSINESS",
+					"7286": "BFM BUSINESS",
+					"7285": "MC DOUALIYA",
+					"7288": "FUN RADIO",
+					"7287": "MOSAIQUE RADIOS",
+					"7289": "RADIO COURTOISIE",
+					"7280": "1LIVE diGGi",
+					"7282": "WDR Event",
+					"7281": "Die Maus",
+					"7284": "SUD RADIO",
+					"7283": "AUDIO PRIMO",
+					"0402": "Rai 1 HD",
+					"0886": "COMEDIE+",
+					"0644": "ARTE",
+					"0403": "Rai 2 HD",
+					"0645": "FRANCE O",
+					"0887": "EXTREME SPORTS",
+					"0884": "SERIE CLUB",
+					"0400": "SCHWEIZ 5",
+					"0642": "NUMERO 23",
+					"0401": "oe24.TV",
+					"0643": "MCS BIEN ETRE",
+					"0885": "MAN X",
+					"0882": "M6 MUSIC",
+					"0640": "BEIN SPORTS MAX 9",
+					"0883": "DJAZZ",
+					"0641": "BEIN SPORTS MAX 10",
+					"0881": "MEZZO LIVE",
+					"0408": "ServusTV HD Oesterreich",
+					"0409": "ORF2N HD",
+					"0406": "ORF1 HD",
+					"0648": "Discovery HD",
+					"0407": "ORF2W HD",
+					"0649": "Nat Geo Wild HD",
+					"0404": "Rai 3 HD",
+					"0888": "PIWI+",
+					"0646": "GULLI",
+					"0647": "Sky Cinema HD",
+					"0405": "RAI News 24",
+					"0889": "CANAL J",
+					"7297": "FRANCE CULTURE",
+					"7296": "FRANCE INTER",
+					"7299": "RFI INTERNAT",
+					"7298": "FRANCE BLEU",
+					"7291": "BBC ARABIC",
+					"7290": "BBCW SERVICE",
+					"7293": "FRANCE MUSIQUE",
+					"7292": "MOUV'",
+					"7295": "FRANCE INFO",
+					"7294": "FIP",
+					"0655": "Sky 1",
+					"0897": "QVC",
+					"0413": "DISNEY JR",
+					"0414": "M. ACCIÓN",
+					"0656": "E!",
+					"0898": "CSTAR HITS FRANCE",
+					"0653": "Sky Sport 1 HD",
+					"0411": "NOVA",
+					"0895": "#VAMOS",
+					"0654": "TNT Film (TCM)",
+					"0412": "IBERALIA TV",
+					"0896": "ANIXE+",
+					"0651": "Eurosport360HD 1",
+					"0893": "1-2-3.tv",
+					"0894": "TLC",
+					"0652": "Sky Sport 3 HD",
+					"0410": "FOX LIFE",
+					"0891": "EWTN katholisches TV",
+					"0650": "Sky Sport Bundesliga 2 HD",
+					"0892": "Handystar TV",
+					"0419": "AXN",
+					"0659": "GIRONDINS TV",
+					"0417": "FOX",
+					"0418": "AXN WHITE",
+					"0899": "N24 DOKU",
+					"0415": "M. COMEDIA",
+					"0657": "LA CHAINE METEO",
+					"0416": "M. DCINE",
+					"0658": "ELLE GIRL",
+					"0670": "MTV Hits",
+					"0424": "RTL HH SH",
+					"0666": "NICKELODEON JR",
+					"0667": "ZDF",
+					"0425": "DMAX",
+					"0664": "MOTORS TV",
+					"0422": "EURONEWS GERMAN SD",
+					"0423": "MTV",
+					"0665": "BOING",
+					"0662": "BOOMERANG",
+					"0420": "#0",
+					"0421": "EURONEWS FRENCH SD",
+					"0663": "CANAL+",
+					"0660": "GAME ONE",
+					"0661": "TRACE URBAN",
+					"0428": "Eurosport360HD 8",
+					"0429": "Sky Sport 10 HD",
+					"0426": "Sky Cinema Family",
+					"0668": "MTV Music 24",
+					"0427": "Sky Sport Bundesliga 9 HD",
+					"0669": "NICK/MTV+",
+					"0680": "Sky Sport Bundesliga 3 HD",
+					"0681": "Disney Cinemagic HD",
+					"0435": "beIN Sports 3 HD",
+					"0677": "Sky Sport 2 HD",
+					"0678": "Sky Sport 4 HD",
+					"0436": "RT HD",
+					"0433": "beIN Sports 1 HD",
+					"0675": "Nicktoons (S)",
+					"0434": "beIN Sports 2 HD",
+					"0676": "Nicktoons Turkey",
+					"0431": "beIN Sports 2 HD",
+					"0673": "VH1",
+					"0432": "beIN Sports 3 HD",
+					"0674": "VH1 Classic",
+					"0671": "MTV Dance",
+					"0430": "beIN Sports 1 HD",
+					"0672": "TF1 SERIES FILMS",
+					"0439": "RTL 2 CH",
+					"0437": "RT Esp HD",
+					"0679": "Eurosport360HD 2",
+					"0438": "RT Esp HD",
+					"0691": "CINE+ FRISSON",
+					"0692": "CINE+ FAMIZ",
+					"0450": ".",
+					"0690": "CANAL+ SERIES",
+					"0446": "SES 07",
+					"0688": "CANAL+ SPORT",
+					"0204": "BEIN LALIGA",
+					"0447": "SES 08",
+					"0205": "NAT GEOGRAPH",
+					"0689": "CANAL+ FAMILY",
+					"0686": "CANAL+ DECALE",
+					"0202": "CANAL ODISEA",
+					"0444": "3+",
+					"0445": "SES 06",
+					"0203": "PLAYBOY TV",
+					"0687": "CANAL+ CINEMA",
+					"0684": "Sky Atlantic HD",
+					"0442": "H2D Handshake 2 Deutschland",
+					"0200": "GUÍA FÁCIL",
+					"0443": "SES 04",
+					"0201": "M. GOLF",
+					"0685": "CANAL+",
+					"0440": "SES 01",
+					"0682": "NatGeo HD",
+					"0441": "SAT.1 emotions",
+					"0683": "13th Street HD",
+					"0208": "CALLE 13",
+					"0209": "LALIGATV BAR",
+					"0448": "SES 09",
+					"0206": "M. FÚTBOL",
+					"0449": "SES 10",
+					"0207": "M. DEP 1",
+					"0460": ".3.",
+					"0461": "SYFY HD",
+					"0699": "Sky Krimi",
+					"0215": "MDR Thüringen HD",
+					"0457": ".",
+					"0216": "M.FORMULA1HD",
+					"0458": ".1.",
+					"0213": "rbb Brandenburg HD",
+					"0697": "Sky Cinema Nostalgie",
+					"0455": ".",
+					"0214": "MDR S-Anhalt HD",
+					"0698": "Junior",
+					"0456": ".",
+					"0695": "Sky Cinema",
+					"0211": "SYFY",
+					"0453": "Die Neue Zeit TV",
+					"0696": "Sky Cinema Emotion",
+					"0212": "BEIN LALIGA",
+					"0454": ".",
+					"0693": "CINE+ CLASSIC",
+					"0451": ".",
+					"0694": "iTELE",
+					"0210": "CANAL DECASA",
+					"0452": ".",
+					"0219": "ANTENA 3 HD",
+					"0217": "M. DEPORTES1HD",
+					"0459": ".2.",
+					"0218": "AMC HD",
+					"0471": "SSU Samsung",
+					"0472": "Cubavision Internacional",
+					"0230": ".",
+					"0470": "SWR RP HD",
+					"0468": "sixx HD Austria",
+					"0226": "Genius family",
+					"0469": "Pro7 MAXX HD Austria",
+					"0227": "HGTV",
+					"0224": "MediaShop- Meine Einkaufswelt",
+					"0466": "AXN WHITE HD",
+					"0225": "Zee One",
+					"0467": "RTL HD",
+					"0464": "M. DEP 2 HD",
+					"0222": "LA SEXTA HD",
+					"0465": "M. XTRA HD",
+					"0223": ".",
+					"0462": "VIAJAR HD",
+					"0220": "CUATRO HD",
+					"0221": "TELECINCO HD",
+					"0463": "M.ESTRENOSHD",
+					"0228": ".",
+					"0229": "Sky Sport News",
+					"0240": "TLC HD",
+					"0482": "Mainfranken",
+					"0241": "Zee One HD",
+					"0483": "TV Oberfranken",
+					"0480": "münchen.tv",
+					"0481": "rfo Regional Oberbayern",
+					"0479": "Ulm-Allgäu",
+					"0237": "M. DEPORTESHD",
+					"0238": "NAT GEO HD",
+					"0477": "Franken Fernsehen",
+					"0235": "CALLE 13 HD",
+					"0478": "intv",
+					"0236": "EUROSPORT1HD",
+					"0475": "RT Esp",
+					"0233": "NICKELODEONHD",
+					"0476": "a.tv",
+					"0234": "MEZZO LIVE HD",
+					"0473": "Al Jazeera Channel",
+					"0231": ".",
+					"0474": "Arirang TV",
+					"0232": ".",
+					"0239": "TOROS HD",
+					"0493": "TV5MONDE EUROPE",
+					"0251": "LA SEXTA",
+					"0494": "TRT World HD",
+					"0252": "LA 1",
+					"0010": "3sat HD",
+					"0491": "CGTN F",
+					"0250": "CLAN TVE",
+					"0492": "CGTN",
+					"0490": "CGTN Documentary",
+					"0006": "kabel eins",
+					"0248": "SES Demo",
+					"0007": "RTL2",
+					"0249": "FDF",
+					"0004": "SAT.1",
+					"0246": "QVC BEAUTY & STYLE HD",
+					"0488": "France 24 (in English)",
+					"0005": "ProSieben",
+					"0247": "MTV HD Austria",
+					"0489": "France 24 (in Arabic)",
+					"0002": "ZDF HD",
+					"0486": "Russia Today",
+					"0244": "Channel21 HD",
+					"0245": "TLC HD Austria",
+					"0003": "RTL Television",
+					"0487": "France 24 (en Français)",
+					"0242": "mediaspar HD",
+					"0484": "TVA-OTV",
+					"0485": "Niederbayern",
+					"0243": "MTV HD",
+					"0001": "Das Erste HD",
+					"0008": "VOX",
+					"0009": "arte HD",
+					"0020": "zdf_neo HD",
+					"0262": "UHD1 by ASTRA / HD+",
+					"0021": "SIXX",
+					"0263": "M. ESTRENOS",
+					"0260": "NAT GEO WILD",
+					"0261": "SES UHD Demo Channel",
+					"0259": "TNT",
+					"0017": "MDR Sachsen HD",
+					"0018": "rbb Berlin HD",
+					"0015": "SWR BW HD",
+					"0257": "M. XTRA",
+					"0499": "CNBC Europe",
+					"0016": "hr-fernsehen HD",
+					"0258": "CUATRO",
+					"0255": "TELECINCO",
+					"0013": "NDR FS NDS HD",
+					"0497": "NDR FS HH HD",
+					"0498": "NDR FS SH HD",
+					"0014": "BR Fernsehen Süd HD",
+					"0256": "0256",
+					"0011": "ServusTV HD Deutschland",
+					"0253": "HOLLYWOOD",
+					"0495": "BR Fernsehen Nord HD",
+					"0012": "WDR HD Düsseldorf",
+					"0496": "NDR FS MV HD",
+					"0254": "LA 2",
+					"0019": "ONE HD",
+					"0031": "ZDFinfo HD",
+					"0273": "SR Fernsehen HD",
+					"0274": "TV Record SD",
+					"0032": "Eurosport 1 Deutschland",
+					"0271": "CANAL COCINA",
+					"0030": "Pro7 MAXX",
+					"0272": "AMC",
+					"0270": "TELEDEPORTE",
+					"0028": "Fox HD",
+					"0029": "SAT.1 Gold",
+					"0268": "VIAJAR",
+					"0026": "SR Fernsehen",
+					"0027": "tagesschau24 HD",
+					"0269": "M. SERIESXTRA",
+					"0266": "TCM",
+					"0267": "COMEDY CENTRAL",
+					"0022": "SUPER RTL",
+					"0264": "DISNEY CH.",
+					"0265": "Los40",
+					"0023": "KiKA HD",
+					"0284": "RTLNITRO HD",
+					"0285": "RTL Living",
+					"0282": "VOX HD Austria",
+					"0040": "Pro7 MAXX HD",
+					"0041": "Universal HD",
+					"0283": "RTL II HD Austria",
+					"0280": "L EQUIPE 21",
+					"0281": "RTL HD Austria",
+					"0039": "ANIXE HD",
+					"0037": "Spiegel Geschichte HD",
+					"0279": "L EQUIPE 21",
+					"0038": "Comedy Central",
+					"0035": "WELT",
+					"0277": "TVGA",
+					"0036": "n-tv",
+					"0278": "I24 NEWS",
+					"0275": "TELESUR",
+					"0033": "NITRO",
+					"0276": "TBN Espana",
+					"0034": "ARD-alpha",
+					"0295": "MULTIDEP.1",
+					"0053": "Deluxe Music HD",
+					"0296": "MULTIDEP.2",
+					"0054": "Disney Channel HD",
+					"0051": "TELE 5 HD",
+					"0293": "ALQ XXHARD",
+					"0052": "DMAX HD",
+					"0294": "BEINLALIGA1",
+					"0291": "ALQUILER X",
+					"0050": "WELT HD",
+					"0292": "ALQUILER XX",
+					"0290": "ALQUILER 3",
+					"0048": "SIXX HD",
+					"0049": "Comedy Central HD",
+					"0046": "RTLII HD",
+					"0288": "ALQUILER 5",
+					"0289": "ALQUILER 6",
+					"0044": "TNT Serie HD",
+					"0286": "MULTI-X",
+					"0287": "MULTI-X (2)",
+					"0064": "ZDFinfo",
+					"0065": "PHOENIX",
+					"0062": "KiKA",
+					"0063": "zdf_neo",
+					"0060": "BR Fernsehen Süd",
+					"0061": "SWR Fernsehen BW",
+					"0059": "NDR FS NDS",
+					"0299": "TOROS TV",
+					"0057": "3sat",
+					"0058": "WDR Köln",
+					"0055": "Disney Channel",
+					"0297": "BEINLALIGA7",
+					"0056": "TELE 5",
+					"0298": "ALQUILER 4",
+					"0066": "ONE",
+					"0067": "RTLplus",
+					"0099": "Lokal TV Portal",
+					"7301": "RTL",
+					"0909": "HSE24 TREND",
+					"7300": "RADIO CLASSIQUE",
+					"7303": "RMC",
+					"0907": "REGIO TV",
+					"0908": "HSE24",
+					"7302": "EUROPE 1",
+					"0905": "AstroTV",
+					"0906": "e8 television",
+					"0903": "meinTVshop",
+					"0904": "mediasparTV Homeshopping",
+					"0901": "Sonnenklar TV",
+					"0902": "MediaShop- Neuheiten",
+					"0900": ".",
+					"7310": "CONTACT FM",
+					"7312": "NRJ",
+					"7311": "NOSTALGIE",
+					"7314": "VIRGIN RADIO",
+					"0918": "Eurosport2 ger",
+					"7313": "RFM",
+					"0919": "Planet",
+					"7305": "TSF JAZZ",
+					"0916": "Hustler TV",
+					"7304": "RIRE & CHANSONS",
+					"0917": "Hustler TV CZ",
+					"7307": "JAZZ RADIO",
+					"0914": "Brazzers TV",
+					"7306": "OUI FM",
+					"0915": "Brazzers TV CZ",
+					"0912": "Vivid CZ",
+					"7309": "RADIO FG",
+					"7308": "NOVA",
+					"0913": "AB3",
+					"0910": "CSC TEST",
+					"0911": "Vivid",
+					"7321": ".",
+					"7320": "BEUR FM",
+					"7323": "Klassik Radio",
+					"7322": "egoFM",
+					"0929": "QVC PLUS",
+					"7325": ".",
+					"7324": ".",
+					"0920": "sportdigital HD",
+					"7316": "RTL2",
+					"0927": "QVC Deutschland",
+					"7315": "CHERIE FM",
+					"0928": "Bibel TV",
+					"0925": "SAT.1 NRW",
+					"7318": "RADIO NOTRE DAME",
+					"0926": "kabel eins Doku",
+					"7317": "SKYROCK",
+					"0923": ".",
+					"0924": "SAT.1 Bayern",
+					"7319": "RADIO ALFA",
+					"0921": "kabel eins classics",
+					"0922": "AXN Deutschland",
+					"7330": "VRT Radio1",
+					"7332": "Radio neue Hoffnung",
+					"7331": "VRT Radio2",
+					"7334": "Radio Horeb",
+					"7333": "RTL RADIO",
+					"7336": "ffn",
+					"7335": "Inselradio",
+					"0930": "CashTV",
+					"0931": "Cherie 25",
+					"0938": "TELE 5 HD Austria",
+					"7327": "Radio Lebensquelle",
+					"7326": "JAM FM",
+					"0939": "DMAX HD Austria",
+					"7329": "Nostalgie",
+					"0936": ".",
+					"7328": "Radio Freundes-Dienst",
+					"0937": ".",
+					"0934": "Juwelo HD",
+					"0935": "pearl.tv HD Shop",
+					"0932": "Cherie 25",
+					"0933": "sonnenklar.TV HD",
+					"7341": "planet radio",
+					"7340": "HIT RADIO FFH",
+					"7343": "Radio Regenbogen",
+					"7342": "harmony.fm",
+					"7345": "radioB2 SCHLAGER",
+					"7344": "Radio HCJB",
+					"7347": "OE1",
+					"0709": "CSTAR",
+					"7346": "SCHLAGERPARADIES",
+					"0941": "0941",
+					"0942": "WDR Aachen",
+					"0700": "Sky Sport 1",
+					"0940": "Canal+ UHD",
+					"0949": "WDR HD Duisburg",
+					"7338": "Radio HBR",
+					"0707": "EUROSPORT 1",
+					"7337": "Radio Paloma",
+					"0708": "Kinowelt TV",
+					"0947": "WDR HD Wuppertal",
+					"0705": "Sky Sport Bundesliga 6 HD",
+					"0948": "WDR HD Bonn",
+					"0706": "TF1",
+					"7339": "Radio Gloria",
+					"0945": "WDR Duisburg",
+					"0703": "Classica",
+					"0946": "WDR HD Aachen",
+					"0704": "TNT Film HD",
+					"0943": "WDR Wuppertal",
+					"0701": "Sky Sport Bundesliga 1",
+					"0944": "WDR Bonn",
+					"0702": "Sky Select",
+					"7352": "OE2 O",
+					"7351": "OE2 B",
+					"7354": "OE2 T",
+					"7353": "OE2 S",
+					"7356": "OE2 St",
+					"7355": "OE2 V",
+					"7358": "OE3",
+					"7357": "OE2 K",
+					"7350": "OE2 N",
+					"0952": "collection",
+					"0710": "ProSieben Schweiz",
+					"0711": "ProSieben Austria",
+					"0953": "K-TV",
+					"0950": "Sky News Intl",
+					"0951": "Sky Sport 7 HD",
+					"0718": "SAT.1 NS/Bremen",
+					"7349": "OE2 W",
+					"0719": "SAT.1 RhlPf/Hessen",
+					"7348": "OE1 DD",
+					"0716": "PULS 4 Austria",
+					"0958": "Deutsche Girls 24 TV",
+					"0717": "SAT.1 HH/SH",
+					"0959": "Juwelo TV",
+					"0714": "SAT.1 A",
+					"0956": "GayBoys LIVE",
+					"0957": "rhein main tv",
+					"0715": "SAT.1 CH",
+					"0712": "Kabel 1 Schweiz",
+					"0954": "Deutsches Musik Fernsehen",
+					"0955": "Lustkanal24 TV",
+					"0713": "Kabel 1 Austria",
+					"7362": "RADIO MARIA",
+					"7365": "Sky Sport Bundesliga 10",
+					"7364": "Sky Select 1",
+					"7367": "Sky Select Event A",
+					"7366": "Sky Sport 11",
+					"7369": "Sky Sport Bundesliga 2",
+					"7368": "Sky Select 2",
+					"7361": "Hope Channel Radio",
+					"7360": "U1 Tirol",
+					"0721": "MULTISPORTS 3",
+					"0963": "MEDIA BROADCAST - Test 3",
+					"0964": "Maennersache TV",
+					"0722": "MULTISPORTS 4",
+					"0961": "Erotiksat24 TV",
+					"0962": "123-Damenwahl",
+					"0720": ".",
+					"0960": "Dreamgirls24 TV",
+					"0729": "DISNEY XD",
+					"7359": "FM4",
+					"0969": "Eros TV",
+					"0727": "BOOMERANG",
+					"0725": "SAT.1 HD",
+					"0967": "Mobile Sex",
+					"0968": "SEX-Kontakte",
+					"0726": "BOING",
+					"0723": "QVC Style",
+					"0965": "Date Line",
+					"0724": "SPORT1",
+					"0966": "Fotohandy",
+					"7374": "Sky Select 4",
+					"7373": "Sky Sport 4",
+					"7376": "Sky Sport 5",
+					"7375": "Sky Sport Bundesliga 4",
+					"7378": "Sky Sport Bundesliga 5",
+					"7377": "Sky Select 5",
+					"7379": "Sky Sport 6",
+					"7370": "Sky Sport 3",
+					"7372": "Sky Sport Bundesliga 3",
+					"7371": "Sky Select 3",
+					"0974": "nice",
+					"0732": "OCS CHOC",
+					"0733": "NON STOP PEOPLE",
+					"0975": "Babestation24",
+					"0972": "Heiss und Sexy TV",
+					"0730": "DISNEY CINEMA",
+					"0973": "Shop24Direct",
+					"0731": "FRENCH LOVER",
+					"0970": "Achtung Sexy TV",
+					"0971": "Traumfrauen TV",
+					"0738": "TELETOON+",
+					"0739": "TELETOON+1",
+					"0736": "PLANETE+ CI",
+					"0978": "BunnyClub24",
+					"0737": "MY ZEN TV",
+					"0979": "Clipmobile",
+					"0976": "Fundorado TV",
+					"0734": "EUROSPORT 2",
+					"0977": "EROTIKA TV - NEU!",
+					"0735": "DISNEY CHANNEL+1",
+					"7385": "Sky Select 7",
+					"7384": "Data_System_TR_66",
+					"7387": "Sky Sport 8",
+					"7386": "Sky Sport Bundesliga 7",
+					"7389": "Sky Sport Bundesliga 8",
+					"7388": "Sky Select 8",
+					"7381": "Sky Sport Bundesliga 6",
+					"7380": "Sky Select 6",
+					"7383": "BDL VoD",
+					"7382": "Sky Sport 7",
+					"0985": "RTL NITRO A",
+					"0743": "NDR FS MV",
+					"0501": "Bloomberg Europe TV",
+					"0986": "Welt der Wunder",
+					"0502": "RMC Decouverte HD",
+					"0744": "NDR FS HH",
+					"0741": "rbb Berlin",
+					"0983": "multithek (Internet)",
+					"0984": "ORF III",
+					"0500": "BBC World",
+					"0742": "ARD-TEST-1",
+					"0981": "MEDIA BROADCAST - Test 4",
+					"0740": "rbb Brandenburg",
+					"0982": "ALT Sendersuchlauf starten!!",
+					"0980": "MEDIA BROADCAST - Test 6",
+					"0509": "DW English",
+					"0507": "TVRUS",
+					"0749": "SWR Fernsehen RP",
+					"0508": ".",
+					"0989": "VISIT-X.tv",
+					"0747": "MDR S-Anhalt",
+					"0505": "Algerie 3",
+					"0748": "MDR Thüringen",
+					"0506": "Canal Algerie",
+					"0503": "RMC Decouverte HD",
+					"0745": "NDR FS SH",
+					"0987": "LT1-OOE",
+					"0988": "sixx Austria",
+					"0504": "Sonlife Broadcasting Network",
+					"0746": "MDR Sachsen",
+					"7396": "Blue Movie 2",
+					"7395": "Blue Movie 1",
+					"7397": "Blue Movie 3",
+					"7399": "NDS Applikation",
+					"7390": "Sky Sport 9",
+					"7392": "Sky Sport Bundesliga 9",
+					"7391": "Sky Select 9",
+					"7394": "Sky Select Event B",
+					"7393": "Sky Sport 10",
+					"0754": "PENTHOUSE",
+					"0996": "ORF2",
+					"0512": "CANAL 24 HORAS",
+					"0997": "ORF2 W",
+					"0513": "CNN Int.",
+					"0755": "CARTOON NETWORK",
+					"0752": "TEVA",
+					"0994": "BTV",
+					"0511": "TVE INTERNACIONAL EUROPA",
+					"0995": "ORF1",
+					"0753": "J-ONE",
+					"0750": "TCM CINEMA",
+					"0992": "4News",
+					"0993": "L-TV/TVM",
+					"0751": "GOLF+",
+					"0990": "ServusTV Deutschland",
+					"0991": "ServusTV Oesterreich",
+					"0518": "YTN",
+					"0519": "KBS World 24",
+					"0758": "PLANETE+ A&E",
+					"0516": "Al Jazeera English",
+					"0759": "MULTISPORTS 5",
+					"0517": "KBS World",
+					"0998": "ORF2 N",
+					"0756": "ONZEO",
+					"0757": "TV5 MONDE",
+					"0999": "ORF2 B",
+					"0765": "NICKELODEON AT",
+					"0523": "MNC World News",
+					"0524": "Dragon TV",
+					"0766": "DELUXE MUSIC",
+					"0521": "MNC Drama",
+					"0763": ".",
+					"0522": "MNC Infotainment",
+					"0764": "Comedy Central / VIVA AT",
+					"0761": "N24 Austria",
+					"0520": "MNC International",
+					"0762": "BB-MV Lokal-TV",
+					"0760": "TOONAMI",
+					"0529": "Colors",
+					"0527": "Hunan TV",
+					"0769": "Beauty TV",
+					"0528": "Dopool Drama",
+					"0767": "JML Shop",
+					"0525": "Guangdong TV",
+					"0768": "MediaShop- Meine Einkaufswelt",
+					"0526": "Dopool Kids",
+					"0780": "FRANCE 2",
+					"0534": "Star Plus UK",
+					"0776": "CINE+ PREMIER",
+					"0535": "Star Gold UK",
+					"0777": "M6",
+					"0774": "GOD Channel",
+					"0532": "B4U Movies UK",
+					"0533": "B4U Music UK",
+					"0775": ".",
+					"0530": "Rishtey Europe",
+					"0772": ".",
+					"0531": "Times Now",
+					"0773": "DMAX Austria",
+					"0770": "Channel21",
+					"0771": "pearl.tv Shop",
+					"0538": "NDTV 24x7",
+					"0539": "Zoom",
+					"0778": "W9",
+					"0536": "Life OK UK",
+					"0779": "USHUAIA TV",
+					"0537": "Aaj Tak UK",
+					"0790": "TOGGO plus",
+					"0791": "CNEWS",
+					"0787": "RTL HB NDS",
+					"0545": "PULS 4 HD Austria",
+					"0303": "MULTIDEP.4",
+					"0788": "RTL Regional NRW",
+					"0304": "BEIN MAX 8",
+					"0546": ".",
+					"0543": "ProSieben HD Austria",
+					"0301": "MULTI-X (3)",
+					"0785": "BARKER COLLECTIVITES SD4",
+					"0544": "kabel eins HD Austria",
+					"0302": "MULTIDEP.3",
+					"0786": "M.LCAMPEON2",
+					"0541": "MAX",
+					"0783": "FRANCE 3",
+					"0784": "Travelxp 4k",
+					"0542": "SAT.1 HD Austria",
+					"0300": "MULTI-X (1)",
+					"0781": "CINE+ EMOTION",
+					"0540": "SET Asia",
+					"0782": "BEIN SPORTS 1",
+					"0309": "BEIN SPORTS",
+					"0549": "kabel1 Doku austria",
+					"0307": "BEINLALIGA5",
+					"0308": "BEIN MAX 2",
+					"0547": "SAT.1 Gold Österreich",
+					"0789": "RTL Bayern",
+					"0305": "MULTIFUT. 2",
+					"0548": "Pro7 MAXX Austria",
+					"0306": "MULTIFUT. 3",
+					"0560": "Sky Cinema +1",
+					"0798": "FRANCE 5",
+					"0556": "CLASSICA",
+					"0314": "BEINLALIGA2",
+					"0799": "LCI",
+					"0315": "BEINLALIGA3",
+					"0557": "ANTENA 3",
+					"0796": "PLANETE+",
+					"0554": "CANAL PANDA",
+					"0312": "BEINLALIGA6",
+					"0555": "R. MADRID TV",
+					"0797": "DISNEY CHANNEL",
+					"0313": "BEIN MAX 3",
+					"0794": "PARIS PREMIERE",
+					"0310": "BEIN MAX 4",
+					"0552": "ARAGON TV INT",
+					"0553": "NEOX",
+					"0795": "LCP",
+					"0311": "BEIN MAX 5",
+					"0550": "PARAMOUNT",
+					"0792": "NATIONAL GEO",
+					"0793": "Nicer Dicer TV",
+					"0551": ".",
+					"0318": "Eurosport 1 HD",
+					"0319": "Fashion 4K",
+					"0316": "SAT.1 Gold HD",
+					"0558": "BE MAD",
+					"0317": "Fashion 4K Preview",
+					"0559": "EUROSPORT 2",
+					"0570": "MTV Hits",
+					"0571": "MTV Dance",
+					"0325": "DISNEY CH HD",
+					"0567": "Classica",
+					"0568": "Beate-Uhse.TV",
+					"0326": "#0 HD",
+					"0323": "TNT HD",
+					"0565": "Disney Junior",
+					"0324": "NG WILD HD",
+					"0566": "Junior",
+					"0563": "Sky Cinema Comedy",
+					"0321": "M. SERIES HD",
+					"0322": "TCM HD",
+					"0564": "Disney XD",
+					"0561": "Sky Cinema +24",
+					"0562": "Sky Cinema Action",
+					"0320": "SAT.1 Gold HD Austria",
+					"0329": "STN test 2",
+					"0569": "Nickelodeon Turkey",
+					"0327": "CAZAyPESCA HD",
+					"0328": "STN test 1",
+					"0581": "Nick Junior Global",
+					"0582": "Sky Cinema Hits",
+					"0340": "CAZA Y PESCA",
+					"0580": "VH1 Classic.",
+					"0336": "STN Test 9",
+					"0578": "Nick Jr..",
+					"0579": "VH1.",
+					"0337": "STN Test 10",
+					"0334": "STN Test 7",
+					"0576": "Nick Jr",
+					"0335": "STN Test 8",
+					"0577": "Nick Jr.",
+					"0332": "STN Test 5",
+					"0574": "MTV ROCKS",
+					"0333": "STN Test 6",
+					"0575": "NICKELODEON Iberia",
+					"0572": "VH1",
+					"0330": "STN test 3",
+					"0573": "VH1 Classic",
+					"0331": "STN Test 4",
+					"0338": "CANAL SUR A.",
+					"0339": "DISNEY XD",
+					"0350": "Sky Cinema Action HD",
+					"0592": "Goldstar TV",
+					"0351": "Sky Sport Austria 1 HD",
+					"0593": "Disney Cinemagic",
+					"0590": "Spiegel Geschichte",
+					"0591": "Heimatkanal",
+					"0589": "NatGeo Wild",
+					"0347": "M. Cine Español",
+					"0105": "BEINLALIGA2",
+					"0106": "AXN HD",
+					"0348": "24 HORAS",
+					"0587": "Sky Sport 2",
+					"0345": "HISTORIA",
+					"0103": "BEINLALIGA1",
+					"0588": "Sky Sport Austria",
+					"0346": "CRIMEN+INVES",
+					"0104": "ALQUILER HD",
+					"0585": "TNT Serie",
+					"0101": "HLG teststream",
+					"0343": "DISCOVERY",
+					"0102": "Test technique UHD NRJ",
+					"0586": "Syfy",
+					"0344": "COSMO",
+					"0341": "BLAZE",
+					"0583": "13th Street",
+					"0342": "NICKELODEON",
+					"0584": "Fox Serie",
+					"0109": "ALQUILER 2 HD",
+					"0107": "M.COMEDIA HD",
+					"0349": "M. DEPORTES1",
+					"0108": "LALIGATV BAR",
+					"0361": "Sky Sport 6 HD",
+					"0362": "TV TRWAM",
+					"0120": "M. DISNEY",
+					"0360": "Sky Sport Bundesliga 5 HD",
+					"0116": "Test-R",
+					"0358": "Jukebox",
+					"0117": "DIVINITY",
+					"0359": "DAZN 1 Bar HD",
+					"0114": "tagesschau24",
+					"0356": "SYFY HD",
+					"0598": "BET",
+					"0115": "arte",
+					"0357": "NATIONAL GEOGRAPHIC WILD",
+					"0599": "A+",
+					"0354": "TNT Serie HD",
+					"0596": "Sky Sport UHD",
+					"0112": "LA 1 HD",
+					"0355": "NHK WORLD-JPN",
+					"0113": "M.LCAMPEON1",
+					"0597": ".",
+					"0352": "Universal TV HD",
+					"0594": "Sky Atlantic +1 HD",
+					"0110": "M.PartidazoHD",
+					"0595": "Sky Sport Bundesliga UHD",
+					"0111": "LALIGATV BAR",
+					"0353": "INSIGHT TV HD INT",
+					"0118": "FOX NEWS",
+					"0119": "BABY TV"
+				}
+			}
+		},
+		{
+			"channelId": "avContent#ps_channel-dvbt",
+			"channelType": "scalarwebavcontrolpresetchannel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "ps_channel",
+				"channelId": "dvbt",
+				"prop-0": "tv:dvbt"
+			},
+			"state": {
+				"readonly": false,
+				"options": {
+					"473": "473",
+					"870": "Comedy Central (connect)",
+					"474": "474",
+					"871": "DELUXE MUSIC (connect)",
+					"475": "475",
+					"872": "Infokanal",
+					"476": "476",
+					"510": "WDR 2 Rheinland (Internet)",
+					"873": "VOX HD",
+					"477": "477",
+					"511": "WDR 3 (Internet)",
+					"874": "SUPER RTL HD",
+					"512": "WDR 4 (Internet)",
+					"875": "RTL II HD",
+					"876": "n-tv HD",
+					"513": "WDR 5 (Internet)",
+					"877": "NITRO HD",
+					"514": "COSMO (Internet)",
+					"515": "WDR Maus (Internet)",
+					"878": "Tele 5 HD",
+					"879": "RTL HD NRW",
+					"516": "1LIVE diGGi (Internet)",
+					"517": "WDR Event (Internet)",
+					"880": "Kabel eins Doku (connect)",
+					"001": "phoenix HD",
+					"881": "freenet Shopping",
+					"002": "tagesschau24 HD",
+					"003": "MDR S-Anhalt HD",
+					"004": "NDR FS NDS HD",
+					"005": "SWR RP HD",
+					"006": "RAN Fighting (connect)",
+					"007": "Das Erste HD",
+					"008": "arte HD",
+					"009": "ONE HD",
+					"010": "WDR HD Düsseldorf",
+					"011": "WDR HD Wuppertal",
+					"012": "WDR HD Duisburg",
+					"013": "BR Fernsehen Süd HD (Internet)",
+					"014": "ARD-alpha HD (Internet)",
+					"015": "hr-fernsehen HD (Internet)",
+					"016": "rbb Berlin HD (Internet)",
+					"017": "SR Fernsehen HD (Internet)",
+					"018": "WDR Mediathek (Internet)",
+					"811": "ProSieben HD",
+					"019": "ANIXE HD Serie (connect)",
+					"812": "kabel eins HD",
+					"813": "SIXX HD",
+					"814": "Pro7 MAXX HD",
+					"815": "SAT.1 Gold HD",
+					"816": "Sport1 HD",
+					"817": "SAT.1 HD NRW",
+					"020": "Das Erste HD",
+					"021": "arte HD",
+					"022": "ONE HD",
+					"023": "WDR HD Aachen",
+					"024": "WDR HD Köln",
+					"025": "WDR HD Bonn",
+					"026": "Test-R",
+					"027": "BR Fernsehen Süd HD (Internet)",
+					"028": "ARD-alpha HD (Internet)",
+					"029": "hr-fernsehen HD (Internet)",
+					"030": "rbb Berlin HD (Internet)",
+					"031": "SR Fernsehen HD (Internet)",
+					"032": "WDR Mediathek (Internet)",
+					"837": "Disney Channel HD",
+					"838": "WELT HD",
+					"839": "DMAX HD",
+					"840": "Eurosport 1 HD",
+					"841": "NICK HD",
+					"842": "1-2-3.tv HD",
+					"843": "QVC HD",
+					"844": "HSE24 HD",
+					"845": "Bibel TV HD",
+					"846": "freenet TV connect",
+					"847": "Bloomberg (connect)",
+					"848": "CNN (connect)",
+					"849": "Euronews (connect)",
+					"850": "France24 (connect)",
+					"852": "Insight (connect)",
+					"853": "SPIEGEL.TV (connect)",
+					"854": "Sportdigital (connect)",
+					"855": "Couchplay (connect)",
+					"858": "Motorvision.TV (connect)",
+					"859": "DER AKTIONÄR TV (connect)",
+					"860": "HopeChannel (connect)",
+					"861": "Lokal-TV (connect)",
+					"862": "Health TV (connect)",
+					"863": "QVC Style (connect)",
+					"500": "1LIVE (Internet)",
+					"501": "WDR 2 Rheinland (Internet)",
+					"502": "WDR 3 (Internet)",
+					"865": "Rhein Main TV (connect)",
+					"503": "WDR 4 (Internet)",
+					"866": "Sonnenklar TV (connect)",
+					"504": "WDR 5 (Internet)",
+					"867": "N24 Doku (connect)",
+					"868": "TLC (connect)",
+					"505": "COSMO (Internet)",
+					"506": "WDR Maus (Internet)",
+					"869": "MTV (connect)",
+					"903": "QVC2 HD",
+					"507": "1LIVE diGGi (Internet)",
+					"508": "WDR Event (Internet)",
+					"509": "1LIVE (Internet)"
+				}
+			}
+		},
+		{
+			"channelId": "avContent#schemes",
+			"channelType": "scalarwebavcontrolschemes",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "schemes",
+				"channelId": "schemes"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#sources",
+			"channelType": "scalarwebavcontrolsources",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "sources",
+				"channelId": "sources"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_connection-main",
+			"channelType": "scalarwebavcontroltermstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_connection",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_icon-main",
+			"channelType": "scalarwebavcontroltermstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_icon",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_label-main",
+			"channelType": "scalarwebavcontroltermstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_label",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_source-main",
+			"channelType": "scalarwebavcontroltermstatussource",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_source",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_title-main",
+			"channelType": "scalarwebavcontroltermstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_title",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_uri-main",
+			"channelType": "scalarwebavcontroltermstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_uri",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#browsercontrol",
+			"channelType": "scalarbrowseractivate",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "browsercontrol",
+				"channelId": "browsercontrol"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#textfavicon",
+			"channelType": "scalarbrowsertextfavicon",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "textfavicon",
+				"channelId": "textfavicon"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#texttitle",
+			"channelType": "scalarbrowsertexttitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "texttitle",
+				"channelId": "texttitle"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#texttype",
+			"channelType": "scalarbrowsertexttype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "texttype",
+				"channelId": "texttype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#texturl",
+			"channelType": "scalarbrowsertexturl",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "texturl",
+				"channelId": "texturl"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#controlmode",
+			"channelType": "scalarceccontrolmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "controlmode",
+				"channelId": "controlmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#mhlautoinputchangemode",
+			"channelType": "scalarcecmhlautoinputchangemode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "mhlautoinputchangemode",
+				"channelId": "mhlautoinputchangemode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#mhlpowerfeedmode",
+			"channelType": "scalarcecmhlpowerfeedmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "mhlpowerfeedmode",
+				"channelId": "mhlpowerfeedmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#poweroffsyncmode",
+			"channelType": "scalarcecpoweroffsyncmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "poweroffsyncmode",
+				"channelId": "poweroffsyncmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#poweronsyncmode",
+			"channelType": "scalarcecpoweronsyncmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "poweronsyncmode",
+				"channelId": "poweronsyncmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#currenttime",
+			"channelType": "scalarsystemcurrenttime",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "currenttime",
+				"channelId": "currenttime"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#language",
+			"channelType": "scalarsystemlanguage",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "language",
+				"channelId": "language"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#ledindicatorstatus",
+			"channelType": "scalarsystemledindicatorstatus",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "ledindicatorstatus",
+				"channelId": "ledindicatorstatus"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#powersavingmode",
+			"channelType": "scalarsystempowersavingmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "powersavingmode",
+				"channelId": "powersavingmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#powerstatus",
+			"channelType": "scalarsystempowerstatus",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "powerstatus",
+				"channelId": "powerstatus"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#reboot",
+			"channelType": "scalarsystemreboot",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "reboot",
+				"channelId": "reboot"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#sysCmd",
+			"channelType": "scalarsystemircc",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "sysCmd",
+				"channelId": "sysCmd"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#wolmode",
+			"channelType": "scalarsystemwolmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "wolmode",
+				"channelId": "wolmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#audiosource",
+			"channelType": "scalarvideoscreenaudiosource",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "audiosource",
+				"channelId": "audiosource"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#bannermode",
+			"channelType": "scalarvideoscreenbannermode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "bannermode",
+				"channelId": "bannermode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#multiscreenmode",
+			"channelType": "scalarvideoscreenmultiscreenmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "multiscreenmode",
+				"channelId": "multiscreenmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#pipsubscreenposition",
+			"channelType": "scalarvideoscreenpipsubscreenposition",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pipsubscreenposition",
+				"channelId": "pipsubscreenposition"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#scenesetting",
+			"channelType": "scalarvideoscreenscenesetting",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "scenesetting",
+				"channelId": "scenesetting"
+			},
+			"state": {}
+		}
+	]
+}
