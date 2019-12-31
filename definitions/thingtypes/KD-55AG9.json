@@ -19,6 +19,34 @@
 	},
 	"channels": [
 		{
+			"channelId": "audio#mute-speaker",
+			"channelType": "scalaraudiomute",
+			"properties": {
+				"channelCategory": "mute",
+				"channelId": "speaker",
+				"prop-0": "speaker",
+				"propLen": "1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "audio#volume-speaker",
+			"channelType": "scalaraudiovolume",
+			"properties": {
+				"channelCategory": "volume",
+				"channelId": "speaker",
+				"prop-0": "speaker",
+				"propLen": "1"
+			},
+			"state": {
+				"maximum": 100,
+				"minimum": 0,
+				"options": {},
+				"readonly": false,
+				"step": 1
+			}
+		},
+		{
 			"channelId": "avContent#cn_albumname",
 			"channelType": "scalarwebavcontrolcontentalbumname",
 			"properties": {
