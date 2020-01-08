@@ -1,8 +1,8 @@
 {
 	"service": "scalar",
 	"configUri": "thing-type:sony:scalarconfig",
-	"modelName": "KD-65X7500D",
-	"label": "Sony KD-65X7500D Scalar",
+	"modelName": "KD-55X8005C",
+	"label": "Sony Living Room TV",
 	"description": "Sony Scalar Web",
 	"channelGroups": {
 		"cec": "CEC",
@@ -19,62 +19,60 @@
 	},
 	"channels": [
 		{
+			"channelId": "audio#mute-headphone",
+			"channelType": "scalaraudiomute",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "mute",
+				"channelId": "headphone",
+				"prop-0": "headphone"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "audio#mute-speaker",
 			"channelType": "scalaraudiomute",
 			"properties": {
+				"propLen": "1",
 				"channelCategory": "mute",
 				"channelId": "speaker",
-				"prop-0": "speaker",
-				"propLen": "1"
+				"prop-0": "speaker"
 			},
 			"state": {}
+		},
+		{
+			"channelId": "audio#volume-headphone",
+			"channelType": "scalaraudiovolume",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "volume",
+				"channelId": "headphone",
+				"prop-0": "headphone"
+			},
+			"state": {
+				"step": 1,
+				"minimum": 0,
+				"maximum": 100,
+				"readonly": false,
+				"options": {}
+			}
 		},
 		{
 			"channelId": "audio#volume-speaker",
 			"channelType": "scalaraudiovolume",
 			"properties": {
+				"propLen": "1",
 				"channelCategory": "volume",
 				"channelId": "speaker",
-				"prop-0": "speaker",
-				"propLen": "1"
+				"prop-0": "speaker"
 			},
 			"state": {
-				"maximum": 100,
+				"step": 1,
 				"minimum": 0,
-				"options": {},
+				"maximum": 100,
 				"readonly": false,
-				"step": 1
+				"options": {}
 			}
-		},
-		{
-			"channelId": "avContent#cn_albumname",
-			"channelType": "scalarwebavcontrolcontentalbumname",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_albumname",
-				"channelId": "cn_albumname"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_applicationname",
-			"channelType": "scalarwebavcontrolplapplicationname",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_applicationname",
-				"channelId": "cn_applicationname"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_artist",
-			"channelType": "scalarwebavcontrolcontentartist",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_artist",
-				"channelId": "cn_artist"
-			},
-			"state": {}
 		},
 		{
 			"channelId": "avContent#cn_audiochannel",
@@ -103,56 +101,6 @@
 				"propLen": "0",
 				"channelCategory": "cn_audiofrequency",
 				"channelId": "cn_audiofrequency"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_bivleassetid",
-			"channelType": "scalarwebavcontrolcontentbivlassetid",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_bivleassetid",
-				"channelId": "cn_bivleassetid"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_bivlprovider",
-			"channelType": "scalarwebavcontrolcontentbivlprovider",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_bivlprovider",
-				"channelId": "cn_bivlprovider"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_bivlserviceid",
-			"channelType": "scalarwebavcontrolcontentbivlserviceid",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_bivlserviceid",
-				"channelId": "cn_bivlserviceid"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_broadcastfreq",
-			"channelType": "scalarwebavcontrolcontentbroadcastfreq",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_broadcastfreq",
-				"channelId": "cn_broadcastfreq"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_broadcastfreqband",
-			"channelType": "scalarwebavcontrolcontentbroadcastband",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_broadcastfreqband",
-				"channelId": "cn_broadcastfreqband"
 			},
 			"state": {}
 		},
@@ -187,42 +135,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_chapterindex",
-			"channelType": "scalarwebavcontrolplchapterindex",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_chapterindex",
-				"channelId": "cn_chapterindex"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_childcount",
 			"channelType": "scalarwebavcontrolcontentchildcount",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_childcount",
 				"channelId": "cn_childcount"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_clipcount",
-			"channelType": "scalarwebavcontrolcontentclipcount",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_clipcount",
-				"channelId": "cn_clipcount"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_contentkind",
-			"channelType": "scalarwebavcontrolcontentcontentkind",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_contentkind",
-				"channelId": "cn_contentkind"
 			},
 			"state": {}
 		},
@@ -247,56 +165,6 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_dabcomponentlabel",
-			"channelType": "scalarwebavcontrolcontentdabcomponentlabel",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_dabcomponentlabel",
-				"channelId": "cn_dabcomponentlabel"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_dabdynamiclabel",
-			"channelType": "scalarwebavcontrolcontentdabdynamiclabel",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_dabdynamiclabel",
-				"channelId": "cn_dabdynamiclabel"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_dabensemblelabel",
-			"channelType": "scalarwebavcontrolcontentdabensemblelabel",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_dabensemblelabel",
-				"channelId": "cn_dabensemblelabel"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_dabservicelabel",
-			"channelType": "scalarwebavcontrolcontentdabservicelabel",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_dabservicelabel",
-				"channelId": "cn_dabservicelabel"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_description",
-			"channelType": "scalarwebavcontrolcontentdescription",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_description",
-				"channelId": "cn_description"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_directremotenum",
 			"channelType": "scalarwebavcontrolcontentdirectremotenum",
 			"properties": {
@@ -313,16 +181,6 @@
 				"propLen": "0",
 				"channelCategory": "cn_dispnum",
 				"channelId": "cn_dispnum"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_durationmsec",
-			"channelType": "scalarwebavcontrolcontentdurationmsec",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_durationmsec",
-				"channelId": "cn_durationmsec"
 			},
 			"state": {}
 		},
@@ -347,72 +205,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_eventid",
-			"channelType": "scalarwebavcontrolcontenteventid",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_eventid",
-				"channelId": "cn_eventid"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_fileno",
-			"channelType": "scalarwebavcontrolcontentfileno",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_fileno",
-				"channelId": "cn_fileno"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_filesizebyte",
 			"channelType": "scalarwebavcontrolcontentfilesizebyte",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_filesizebyte",
 				"channelId": "cn_filesizebyte"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_folderno",
-			"channelType": "scalarwebavcontrolcontentfolderno",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_folderno",
-				"channelId": "cn_folderno"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_genre",
-			"channelType": "scalarwebavcontrolcontentgenre",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_genre",
-				"channelId": "cn_genre"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_globalplaybackcount",
-			"channelType": "scalarwebavcontrolcontentglobalplaybackcount",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_globalplaybackcount",
-				"channelId": "cn_globalplaybackcount"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_hasresume",
-			"channelType": "scalarwebavcontrolcontenthasresume",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_hasresume",
-				"channelId": "cn_hasresume"
 			},
 			"state": {}
 		},
@@ -427,82 +225,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_IS3D",
-			"channelType": "scalarwebavcontrolcontentis3d",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_IS3D",
-				"channelId": "cn_IS3D"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_is4k",
-			"channelType": "scalarwebavcontrolcontentis4k",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_is4k",
-				"channelId": "cn_is4k"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_isalreadyplayed",
 			"channelType": "scalarwebavcontrolcontentisalreadyplayed",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_isalreadyplayed",
 				"channelId": "cn_isalreadyplayed"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_isautodelete",
-			"channelType": "scalarwebavcontrolcontentisautodelete",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_isautodelete",
-				"channelId": "cn_isautodelete"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_isbrowsable",
-			"channelType": "scalarwebavcontrolcontentisbrowsable",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_isbrowsable",
-				"channelId": "cn_isbrowsable"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_isnew",
-			"channelType": "scalarwebavcontrolcontentisnew",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_isnew",
-				"channelId": "cn_isnew"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_isplayable",
-			"channelType": "scalarwebavcontrolcontentisplayable",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_isplayable",
-				"channelId": "cn_isplayable"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_isplaylist",
-			"channelType": "scalarwebavcontrolcontentisplaylist",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_isplaylist",
-				"channelId": "cn_isplaylist"
 			},
 			"state": {}
 		},
@@ -517,42 +245,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_issoundphoto",
-			"channelType": "scalarwebavcontrolcontentissoundphoto",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_issoundphoto",
-				"channelId": "cn_issoundphoto"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_mediatype",
-			"channelType": "scalarwebavcontrolcontentmediatype",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_mediatype",
-				"channelId": "cn_mediatype"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_originaldispnum",
 			"channelType": "scalarwebavcontrolcontentoriginaldispnum",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_originaldispnum",
 				"channelId": "cn_originaldispnum"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_output",
-			"channelType": "scalarwebavcontrolcontentoutput",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_output",
-				"channelId": "cn_output"
 			},
 			"state": {}
 		},
@@ -587,42 +285,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_parentindex",
-			"channelType": "scalarwebavcontrolcontentparentindex",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_parentindex",
-				"channelId": "cn_parentindex"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_parenturi",
 			"channelType": "scalarwebavcontrolcontentparenturi",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_parenturi",
 				"channelId": "cn_parenturi"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_playlistname",
-			"channelType": "scalarwebavcontrolcontentplaylistname",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_playlistname",
-				"channelId": "cn_playlistname"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_podcastname",
-			"channelType": "scalarwebavcontrolcontentpodcastname",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_podcastname",
-				"channelId": "cn_podcastname"
 			},
 			"state": {}
 		},
@@ -657,62 +325,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_programservicetype",
-			"channelType": "scalarwebavcontrolcontentprogramservicetype",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_programservicetype",
-				"channelId": "cn_programservicetype"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_programtitle",
-			"channelType": "scalarwebavcontrolcontentprogramtitle",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_programtitle",
-				"channelId": "cn_programtitle"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_remoteplaytype",
-			"channelType": "scalarwebavcontrolcontentremoteplaytype",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_remoteplaytype",
-				"channelId": "cn_remoteplaytype"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_repeattype",
-			"channelType": "scalarwebavcontrolcontentrepeattype",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_repeattype",
-				"channelId": "cn_repeattype"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_selected",
 			"channelType": "scalarwebavcontrolcontentselected",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_selected",
 				"channelId": "cn_selected"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_service",
-			"channelType": "scalarwebavcontrolcontentservice",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_service",
-				"channelId": "cn_service"
 			},
 			"state": {}
 		},
@@ -727,52 +345,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_source",
-			"channelType": "scalarwebavcontrolcontentsource",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_source",
-				"channelId": "cn_source"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_sourcelabel",
-			"channelType": "scalarwebavcontrolcontentsourcelabel",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_sourcelabel",
-				"channelId": "cn_sourcelabel"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_startdatetime",
 			"channelType": "scalarwebavcontrolcontentstartdatetime",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_startdatetime",
 				"channelId": "cn_startdatetime"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_state",
-			"channelType": "scalarwebavcontrolcontentstate",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_state",
-				"channelId": "cn_state"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_statesupplement",
-			"channelType": "scalarwebavcontrolcontentstatesupplement",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_statesupplement",
-				"channelId": "cn_statesupplement"
 			},
 			"state": {}
 		},
@@ -807,32 +385,12 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#cn_synccontentpriority",
-			"channelType": "scalarwebavcontrolcontentsynccontentpriority",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_synccontentpriority",
-				"channelId": "cn_synccontentpriority"
-			},
-			"state": {}
-		},
-		{
 			"channelId": "avContent#cn_title",
 			"channelType": "scalarwebavcontrolcontenttitle",
 			"properties": {
 				"propLen": "0",
 				"channelCategory": "cn_title",
 				"channelId": "cn_title"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#cn_totalcount",
-			"channelType": "scalarwebavcontrolcontenttotalcount",
-			"properties": {
-				"propLen": "0",
-				"channelCategory": "cn_totalcount",
-				"channelId": "cn_totalcount"
 			},
 			"state": {}
 		},
@@ -887,6 +445,39 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_connection-cec2",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "cec2",
+				"prop-0": "extInput:cec?type=player&port=2&logicalAddr=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-cec4",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "cec4",
+				"prop-0": "extInput:cec?type=freeuse&port=4&logicalAddr=5"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-cec4-1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "cec4-1",
+				"prop-0": "extInput:cec?type=player&port=4&logicalAddr=8"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_connection-component1",
 			"channelType": "scalarwebavcontrolinpstatusconnection",
 			"properties": {
@@ -894,17 +485,6 @@
 				"channelCategory": "in_connection",
 				"channelId": "component1",
 				"prop-0": "extInput:component?port=1"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#in_connection-composite1",
-			"channelType": "scalarwebavcontrolinpstatusconnection",
-			"properties": {
-				"propLen": "1",
-				"channelCategory": "in_connection",
-				"channelId": "composite1",
-				"prop-0": "extInput:composite?port=1"
 			},
 			"state": {}
 		},
@@ -953,6 +533,17 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_connection-scart1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_connection-widi1",
 			"channelType": "scalarwebavcontrolinpstatusconnection",
 			"properties": {
@@ -964,6 +555,39 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_icon-cec2",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "cec2",
+				"prop-0": "extInput:cec?type=player&port=2&logicalAddr=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-cec4",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "cec4",
+				"prop-0": "extInput:cec?type=freeuse&port=4&logicalAddr=5"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-cec4-1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "cec4-1",
+				"prop-0": "extInput:cec?type=player&port=4&logicalAddr=8"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_icon-component1",
 			"channelType": "scalarwebavcontrolinpstatusicon",
 			"properties": {
@@ -971,17 +595,6 @@
 				"channelCategory": "in_icon",
 				"channelId": "component1",
 				"prop-0": "extInput:component?port=1"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#in_icon-composite1",
-			"channelType": "scalarwebavcontrolinpstatusicon",
-			"properties": {
-				"propLen": "1",
-				"channelCategory": "in_icon",
-				"channelId": "composite1",
-				"prop-0": "extInput:composite?port=1"
 			},
 			"state": {}
 		},
@@ -1030,6 +643,17 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_icon-scart1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_icon-widi1",
 			"channelType": "scalarwebavcontrolinpstatusicon",
 			"properties": {
@@ -1041,6 +665,39 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_label-cec2",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "cec2",
+				"prop-0": "extInput:cec?type=player&port=2&logicalAddr=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-cec4",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "cec4",
+				"prop-0": "extInput:cec?type=freeuse&port=4&logicalAddr=5"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-cec4-1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "cec4-1",
+				"prop-0": "extInput:cec?type=player&port=4&logicalAddr=8"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_label-component1",
 			"channelType": "scalarwebavcontrolinpstatuslabel",
 			"properties": {
@@ -1048,17 +705,6 @@
 				"channelCategory": "in_label",
 				"channelId": "component1",
 				"prop-0": "extInput:component?port=1"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#in_label-composite1",
-			"channelType": "scalarwebavcontrolinpstatuslabel",
-			"properties": {
-				"propLen": "1",
-				"channelCategory": "in_label",
-				"channelId": "composite1",
-				"prop-0": "extInput:composite?port=1"
 			},
 			"state": {}
 		},
@@ -1107,6 +753,17 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_label-scart1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_label-widi1",
 			"channelType": "scalarwebavcontrolinpstatuslabel",
 			"properties": {
@@ -1118,6 +775,39 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_status-cec2",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "cec2",
+				"prop-0": "extInput:cec?type=player&port=2&logicalAddr=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-cec4",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "cec4",
+				"prop-0": "extInput:cec?type=freeuse&port=4&logicalAddr=5"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-cec4-1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "cec4-1",
+				"prop-0": "extInput:cec?type=player&port=4&logicalAddr=8"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_status-component1",
 			"channelType": "scalarwebavcontrolinpstatusstatus",
 			"properties": {
@@ -1125,17 +815,6 @@
 				"channelCategory": "in_status",
 				"channelId": "component1",
 				"prop-0": "extInput:component?port=1"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#in_status-composite1",
-			"channelType": "scalarwebavcontrolinpstatusstatus",
-			"properties": {
-				"propLen": "1",
-				"channelCategory": "in_status",
-				"channelId": "composite1",
-				"prop-0": "extInput:composite?port=1"
 			},
 			"state": {}
 		},
@@ -1184,6 +863,17 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_status-scart1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_status-widi1",
 			"channelType": "scalarwebavcontrolinpstatusstatus",
 			"properties": {
@@ -1195,6 +885,39 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_title-cec2",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "cec2",
+				"prop-0": "extInput:cec?type=player&port=2&logicalAddr=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-cec4",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "cec4",
+				"prop-0": "extInput:cec?type=freeuse&port=4&logicalAddr=5"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-cec4-1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "cec4-1",
+				"prop-0": "extInput:cec?type=player&port=4&logicalAddr=8"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_title-component1",
 			"channelType": "scalarwebavcontrolinpstatustitle",
 			"properties": {
@@ -1202,17 +925,6 @@
 				"channelCategory": "in_title",
 				"channelId": "component1",
 				"prop-0": "extInput:component?port=1"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#in_title-composite1",
-			"channelType": "scalarwebavcontrolinpstatustitle",
-			"properties": {
-				"propLen": "1",
-				"channelCategory": "in_title",
-				"channelId": "composite1",
-				"prop-0": "extInput:composite?port=1"
 			},
 			"state": {}
 		},
@@ -1261,6 +973,17 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_title-scart1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_title-widi1",
 			"channelType": "scalarwebavcontrolinpstatustitle",
 			"properties": {
@@ -1272,6 +995,39 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_uri-cec2",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "cec2",
+				"prop-0": "extInput:cec?type=player&port=2&logicalAddr=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-cec4",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "cec4",
+				"prop-0": "extInput:cec?type=freeuse&port=4&logicalAddr=5"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-cec4-1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "cec4-1",
+				"prop-0": "extInput:cec?type=player&port=4&logicalAddr=8"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_uri-component1",
 			"channelType": "scalarwebavcontrolinpstatusuri",
 			"properties": {
@@ -1279,17 +1035,6 @@
 				"channelCategory": "in_uri",
 				"channelId": "component1",
 				"prop-0": "extInput:component?port=1"
-			},
-			"state": {}
-		},
-		{
-			"channelId": "avContent#in_uri-composite1",
-			"channelType": "scalarwebavcontrolinpstatusuri",
-			"properties": {
-				"propLen": "1",
-				"channelCategory": "in_uri",
-				"channelId": "composite1",
-				"prop-0": "extInput:composite?port=1"
 			},
 			"state": {}
 		},
@@ -1338,6 +1083,17 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#in_uri-scart1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "scart1",
+				"prop-0": "extInput:scart?port=1"
+			},
+			"state": {}
+		},
+		{
 			"channelId": "avContent#in_uri-widi1",
 			"channelType": "scalarwebavcontrolinpstatusuri",
 			"properties": {
@@ -1349,188 +1105,188 @@
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_bivlassetid-Main",
+			"channelId": "avContent#pl_bivlassetid-main",
 			"channelType": "scalarwebavcontrolplbivlassetid",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_bivlassetid",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_bivlprovider-Main",
+			"channelId": "avContent#pl_bivlprovider-main",
 			"channelType": "scalarwebavcontrolplbivlprovider",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_bivlprovider",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_bivlserviceid-Main",
+			"channelId": "avContent#pl_bivlserviceid-main",
 			"channelType": "scalarwebavcontrolplbivlserviceid",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_bivlserviceid",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_cmd-Main",
+			"channelId": "avContent#pl_cmd-main",
 			"channelType": "scalarwebavcontrolplcommand",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_cmd",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_dispnum-Main",
+			"channelId": "avContent#pl_dispnum-main",
 			"channelType": "scalarwebavcontrolpldispnum",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_dispnum",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_durationsec-Main",
+			"channelId": "avContent#pl_durationsec-main",
 			"channelType": "scalarwebavcontrolpldurationsec",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_durationsec",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_mediatype-Main",
+			"channelId": "avContent#pl_mediatype-main",
 			"channelType": "scalarwebavcontrolplmediatype",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_mediatype",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_originaldispnum-Main",
+			"channelId": "avContent#pl_originaldispnum-main",
 			"channelType": "scalarwebavcontrolploriginaldispnum",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_originaldispnum",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_playspeed-Main",
+			"channelId": "avContent#pl_playspeed-main",
 			"channelType": "scalarwebavcontrolplplayspeed",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_playspeed",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_presetid-Main",
+			"channelId": "avContent#pl_presetid-main",
 			"channelType": "scalarwebavcontrolplpreset",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_presetid",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_programnum-Main",
+			"channelId": "avContent#pl_programnum-main",
 			"channelType": "scalarwebavcontrolplprogramnum",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_programnum",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_programtitle-Main",
+			"channelId": "avContent#pl_programtitle-main",
 			"channelType": "scalarwebavcontrolplprogramtitle",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_programtitle",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_source-Main",
+			"channelId": "avContent#pl_source-main",
 			"channelType": "scalarwebavcontrolplsource",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_source",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_startdatetime-Main",
+			"channelId": "avContent#pl_startdatetime-main",
 			"channelType": "scalarwebavcontrolplstartdatetime",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_startdatetime",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_title-Main",
+			"channelId": "avContent#pl_title-main",
 			"channelType": "scalarwebavcontrolpltitle",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_title",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_tripletstr-Main",
+			"channelId": "avContent#pl_tripletstr-main",
 			"channelType": "scalarwebavcontrolpltripletstr",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_tripletstr",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
 		},
 		{
-			"channelId": "avContent#pl_uri-Main",
+			"channelId": "avContent#pl_uri-main",
 			"channelType": "scalarwebavcontrolpluri",
 			"properties": {
 				"propLen": "1",
 				"channelCategory": "pl_uri",
-				"channelId": "Main",
+				"channelId": "main",
 				"prop-0": "main"
 			},
 			"state": {}
@@ -1616,6 +1372,526 @@
 			"state": {}
 		},
 		{
+			"channelId": "avContent#ps_channel-dvbs",
+			"channelType": "scalarwebavcontrolpresetchannel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "ps_channel",
+				"channelId": "dvbs",
+				"prop-0": "tv:dvbs"
+			},
+			"state": {
+				"readonly": false,
+				"options": {
+					"0251": "Venus TV",
+					"0130": "STV",
+					"0372": "CNN HD",
+					"0131": "STV",
+					"0252": "Hidayat TV",
+					"0373": "COLORS HD",
+					"0494": "Boomerang HD",
+					"0370": "Ideal World HD",
+					"0250": "PTV Global",
+					"0371": "Create&CraftHD",
+					"0248": "babes&brazzers",
+					"0369": "PTC PUNJABI",
+					"0127": "BBC One NI HD",
+					"0249": "TRT World",
+					"0128": "CBBC HD",
+					"0367": "FreeSports",
+					"0004": "Channel 4 HD",
+					"0125": "BBC Two HD",
+					"0246": "ABN TV",
+					"0247": "Primal Living",
+					"0126": "BBC One HD",
+					"0368": "Aastha",
+					"0365": "Zee TV",
+					"0244": "Bible TV",
+					"0123": "BBC Two Wal HD",
+					"0002": "BBC Two HD",
+					"0003": "ITV HD",
+					"0245": "Cruise1st.tv",
+					"0366": "Abu Dhabi TV",
+					"0124": "6945",
+					"0363": "Dave",
+					"0242": "British Muslim",
+					"0121": "BBC One NI",
+					"0243": "TV One",
+					"0122": "BBC Two NI",
+					"0001": "BBC One HD",
+					"0364": "Akaal Channel",
+					"0129": "STV",
+					"0008": "BBC Two",
+					"0262": "QVC Style",
+					"0020": "ITV3+1",
+					"0383": "History+1",
+					"0141": "Channel 4+1",
+					"0263": "QVC Beauty",
+					"0021": "ITV4",
+					"0384": "History2",
+					"0142": "Channel 4+1",
+					"0381": "E!",
+					"0260": "B4U Movies",
+					"0261": "QVC Extra",
+					"0382": "History",
+					"0140": "Channel 4+1",
+					"0380": "SYFY",
+					"0259": "TVC News",
+					"0017": "ITV2",
+					"0138": "ITV",
+					"0139": "Channel 4+1",
+					"0378": "Universal+1",
+					"0499": "Sky Comedy HD",
+					"0257": "London Live",
+					"0136": "ITV+1",
+					"0015": "CITV",
+					"0379": "Universal",
+					"0137": "Sky Greats",
+					"0258": "Climax",
+					"0134": "UTV+1",
+					"0255": "CGTN",
+					"0013": "CBBC HD",
+					"0376": "Bloomberg HD",
+					"0377": "SYFY+1",
+					"0256": "Retro Movies",
+					"0135": "ITV",
+					"0132": "STV",
+					"0253": "Madani Chnl",
+					"0374": "DAYSTAR HD",
+					"0495": "AnimalPlnt HD",
+					"0254": "Vox Africa",
+					"0133": "UTV",
+					"0375": "Record TV HD",
+					"0012": "BBC One NI HD",
+					"0019": "ITV3",
+					"0152": "TLC",
+					"0273": "HUM EUROPE",
+					"0394": "Forces TV",
+					"0274": "TalkingPictures",
+					"0153": "Disc.History+1",
+					"0395": "Dave ja vu",
+					"0150": "Home & Health",
+					"0392": "Challenge+1",
+					"0271": "Ahlebait TV",
+					"0272": "Xpanded TV2",
+					"0151": "ID+1",
+					"0393": "Challenge",
+					"0390": "Crime+Inv+1",
+					"0391": "Sky Crime+1",
+					"0270": "CHSTV",
+					"0149": "Discovery+1",
+					"0029": "Film4",
+					"0268": "eir Sport 1 HD",
+					"0389": "Zee Cinema",
+					"0026": "E4+1",
+					"0147": "Animal Plnt+1",
+					"0027": "More4",
+					"0148": "Disc.Sci+1",
+					"0269": "ATN Bangla UK",
+					"0145": "e4",
+					"0266": "TRT World HD",
+					"0387": "Crime+Inv",
+					"0267": "eir Sport 1 HD",
+					"0388": "Nat Geo Wild",
+					"0146": "ID",
+					"0025": "E4",
+					"0264": "QVC",
+					"0385": "Nat Geo",
+					"0022": "ITV4+1",
+					"0143": "Channel 4",
+					"0265": "Racing TV HD",
+					"0386": "Nat Geo+1",
+					"0144": "Film4+1",
+					"0163": "ITV Box Off HD",
+					"0164": "20826",
+					"0161": "UTV HD",
+					"0041": "RT",
+					"0162": "GOLD+1",
+					"0160": "STV HD",
+					"0039": "Euronews",
+					"0158": "Discovery",
+					"0279": "Birmingham TV",
+					"0037": "BBC Parliament",
+					"0159": "ID",
+					"0277": "Xpanded TV",
+					"0398": "SkySpMainEvHD",
+					"0156": "HomeHealth+1",
+					"0278": "Word Network",
+					"0399": "Eurosport 1 HD",
+					"0157": "Disc.Turbo+1",
+					"0396": "alibi+1",
+					"0275": "Faith World TV",
+					"0154": "Discovery Shed",
+					"0155": "TLC+1",
+					"0397": "Sky One HD",
+					"0276": "KICC TV",
+					"0295": "XXX Amateurs",
+					"0174": "Arirang TV HD",
+					"0296": "XXX Girl Girl",
+					"0175": "CGTN HD",
+					"0054": "B4U Music",
+					"0293": "92 News",
+					"0172": "4seven",
+					"0294": "iON TV",
+					"0173": "RT HD",
+					"0291": "Liverpool TV",
+					"0170": "ITV3 HD",
+					"0171": "ITV4 HD",
+					"0292": "B4U Plus",
+					"0169": "ITV HD",
+					"0046": "Sky News",
+					"0167": "ITV HD",
+					"0168": "ITV HD",
+					"0044": "NHK World HD",
+					"0165": "ITV HD",
+					"0166": "ITV HD",
+					"0045": "CNBC",
+					"0185": "SkySuperheroHD",
+					"0065": "SONY SAB",
+					"0186": "50250",
+					"0183": "Magic",
+					"0063": "Tiny Pop",
+					"0184": "The Box",
+					"0181": "Nickelodeon",
+					"0061": "POP",
+					"0182": "4Music",
+					"0180": "Nick Jr.",
+					"0178": "Sky Superhero",
+					"0299": "Cardiff TV",
+					"0179": "Nicktoons",
+					"0176": "Sky ScFi/Horror",
+					"0297": "PaversShoes.tv",
+					"0177": "HarryPotterHD",
+					"0298": "Bristol TV",
+					"0196": "POP+1",
+					"0075": "BBC One Oxford",
+					"0197": "Sony Channel",
+					"0194": "POP Max+1",
+					"0195": "Sony Action+1",
+					"0074": "BBC One NI",
+					"0192": "POP Max",
+					"0071": "BBC One East W",
+					"0193": "Sony Movies+1",
+					"0190": "Sony Xmas+1",
+					"0191": "Tiny Pop+1",
+					"0070": "BBC One East E",
+					"0189": "Sony Christmas",
+					"0068": "BBC One CI",
+					"0069": "BBC One E Mid",
+					"0187": "Sony Action",
+					"0066": "BBC One South",
+					"0188": "Sony Movies",
+					"0067": "BBC One Lon",
+					"0086": "BBC Two Wales",
+					"0087": "Channel 4",
+					"0084": "BBC Two NI",
+					"0083": "BBC One Yk&Li",
+					"0080": "BBC One Wales",
+					"0081": "BBC One West",
+					"0079": "BBC One W Mid",
+					"0198": "Sony Channel+1",
+					"0199": "Sony Crime",
+					"0078": "BBC One S West",
+					"0090": "ITV",
+					"7202": "BBC R4 FM",
+					"7201": "BBC R3",
+					"7204": "BBC 6 Music",
+					"7203": "BBC R4 LW",
+					"7211": "BBC R Ulster",
+					"7210": "BBC R Cymru",
+					"7213": "talkSPORT",
+					"7212": "BBC R Foyle",
+					"7214": "WRN Europe",
+					"7206": "BBC WS",
+					"7205": "BBC R4 Ex",
+					"7208": "BBC R n Gael",
+					"7207": "BBC R Scot.",
+					"7209": "BBC R Wales",
+					"7220": "RTÉ 2FM",
+					"7222": "RTÉ R na G",
+					"7221": "RTÉ Lyric fm",
+					"7224": "1126",
+					"7223": "Chl Line-up",
+					"7226": "SNR",
+					"7216": "Desi Radio",
+					"7219": "RTÉ Radio 1",
+					"7218": "GN Radio",
+					"7227": "ITVi Stream 44",
+					"7244": "1051",
+					"7243": "BDL",
+					"7246": "ETBG",
+					"7245": "TMS",
+					"7248": "DCS1",
+					"7247": "IEPG data 1",
+					"7253": "Dummy My Sky Service",
+					"7252": "ETFG",
+					"7255": "SES 8K demo Channel",
+					"7254": "Dummy Eire Service",
+					"7257": "Help and Support",
+					"7256": "Browse Shop",
+					"7259": "My Messages",
+					"7258": "Program Your Remote",
+					"7251": "Elmo",
+					"7250": "BEM",
+					"7249": "PSL",
+					"7264": "Reset your PIN",
+					"7263": "Reset TV PIN",
+					"7266": "Get Sky Products",
+					"7265": "Sky Shop",
+					"7268": "Pending Cancel",
+					"7267": "Pending Downgrade",
+					"7269": "My Sky",
+					"7260": "My Account",
+					"7262": "Help and Support",
+					"7261": "My Account",
+					"0501": "TLC HD",
+					"0502": "W HD",
+					"0500": "Sky Disney HD",
+					"0509": "SkySp PL",
+					"0508": "SkySp Mix",
+					"0505": "SkySp F'ball",
+					"0506": "SkySp F'ball",
+					"0503": "SkySp PL",
+					"0504": "SkySp Cricket",
+					"7275": "Update Email Address",
+					"7274": "launchpad",
+					"7271": "Update Email Address",
+					"7270": "MySky Deeplink Test",
+					"7273": "SOM Test Bert/Ernie",
+					"7272": "Sky Shop",
+					"0512": "Sky One",
+					"0513": "Pick",
+					"0510": "SkySp Racing",
+					"0511": "Sky News",
+					"0518": "Sky Two",
+					"0519": "Virgin Three",
+					"0516": "Pick+1",
+					"0517": "SkySp Cricket",
+					"0514": "Sky Two",
+					"0515": "Together",
+					"0523": "RTÉ2 HD",
+					"0402": "Eurosport 2 HD",
+					"0524": "Star Plus HD",
+					"0403": "Eden",
+					"0400": "SkySp ArenaHD",
+					"0521": "Lifetime",
+					"0522": "SkySp Mix",
+					"0401": "E4 HD",
+					"0520": "Sky Witness",
+					"0408": "RTÉ One+1",
+					"0529": "RTÉ One HD",
+					"0409": "Oireachtas TV",
+					"0406": "RTÉ2",
+					"0527": "History HD",
+					"0407": "TG4",
+					"0528": "Crime+Inv HD",
+					"0525": "Sky Action HD",
+					"0404": "MUTV",
+					"0405": "RTÉ One",
+					"0526": "NatGeoWild HD",
+					"0534": "SkySp Racing HD",
+					"0413": "Disney XD",
+					"0414": "Disney Chnl",
+					"0535": "4567",
+					"0532": "Sky Intro",
+					"0411": "RTÉjr",
+					"0533": "SkySp Racing HD",
+					"0412": "BabyTV",
+					"0530": "Disney Jnr HD",
+					"0531": "SONY TV HD",
+					"0410": "RTÉ News Now",
+					"0419": "Anytime",
+					"0538": "Ultra HD",
+					"0417": "Disney Chnl+1",
+					"0539": "SkySp Mix HD",
+					"0418": "Disney Junior+",
+					"0536": "Ultra HD",
+					"0415": "Disney Junior",
+					"0537": "U2MON",
+					"0416": "Disney XD+1",
+					"0545": "Sky News HD",
+					"0424": "Sky Disney",
+					"0303": "Retail TV",
+					"0546": "SkySpCricketHD",
+					"0425": "Sky Drama HD",
+					"0304": "SONY TV",
+					"0422": "YESTERDAY+1",
+					"0301": "Tyne & Wear TV",
+					"0543": "SkySp F1 HD",
+					"0544": "SkySp F1 HD",
+					"0302": "Sky Greats HD",
+					"0541": "SkySp ActionHD",
+					"0420": "Sky Action",
+					"0542": "SkySp ActionHD",
+					"0421": "Sky Comedy",
+					"0300": "Leeds TV",
+					"0540": "SkySp News HD",
+					"0309": "SONY MAX 2",
+					"0428": "Sky Thriller",
+					"0307": "Best Direct",
+					"0549": "Astra UHD Demo",
+					"0429": "Sky",
+					"0308": "GOD Channel",
+					"0547": "SkySpCricketHD",
+					"0426": "Sky Premiere",
+					"0305": "Dunamis TV",
+					"0548": "SkySp Mix HD",
+					"0427": "Sky Prem+1",
+					"0306": "High Street TV 5",
+					"0314": "AAJ TAK",
+					"0436": "GINXeSportsTV",
+					"0315": "ABP News",
+					"0312": "Republic Bharat",
+					"0434": "Sky Crime",
+					"0313": "JML Direct",
+					"0310": "Travelxp",
+					"0431": "Sky Intro",
+					"0552": "EDS 804.1",
+					"0432": "Sky Intro",
+					"0311": "Horse & Country",
+					"0550": "Astra UHD Demo",
+					"0430": "Sky Intro",
+					"0551": "SES UHD Demo",
+					"0439": "___4110",
+					"0318": "TV Warehouse",
+					"0319": "GEO TV",
+					"0316": "ROK",
+					"0437": "Challenge",
+					"0438": "___4109",
+					"0317": "High Street TV 1",
+					"0450": "Disney XD HD",
+					"0204": "Trace Latina",
+					"0325": "Meet the Babes",
+					"0446": "Cartoon Net HD",
+					"0205": "Trace Vault",
+					"0326": "TJC",
+					"0447": "Disney Chnl HD",
+					"0323": "Studio 66",
+					"0202": "Sky ScFi/HorHD",
+					"0203": "Trace Urban",
+					"0324": "Channels 24",
+					"0445": "CNBC HD",
+					"0442": "SkyPremiereHD",
+					"0321": "HUM News",
+					"0200": "Eden+1",
+					"0322": "SkySp ArenaHD",
+					"0201": "SkyHarryPotter",
+					"0443": "Sky Thriller HD",
+					"0440": "(sub b +1000)",
+					"0320": "HUM Masala",
+					"0329": "Gospel Channel",
+					"0208": "Box Hits",
+					"0209": "Home",
+					"0206": "Sky Drama",
+					"0448": "STV HD",
+					"0327": "GN TV",
+					"0328": "Thane",
+					"0449": "STV HD",
+					"0207": "BoxNation",
+					"0460": "Dave",
+					"0461": "W",
+					"0340": "VH1",
+					"0336": "SkySp Racing",
+					"0457": "GOLD HD",
+					"0215": "BT Sport 2",
+					"0337": "Get Lucky TV",
+					"0458": "GOLD",
+					"0216": "BT Sport//ESPN",
+					"0455": "alibi HD",
+					"0334": "SonLife",
+					"0213": "PBS America",
+					"0335": "SkySp Racing",
+					"0456": "STV HD",
+					"0214": "BT Sport 2",
+					"0453": "NickelodeonHD",
+					"0332": "Ideal Extra",
+					"0211": "Home+1",
+					"0333": "Takbeer TV",
+					"0212": "Really",
+					"0454": "MTV HD",
+					"0451": "Nat Geo HD",
+					"0330": "Craft Extra",
+					"0210": "Really",
+					"0331": "NOW 80s",
+					"0452": "ComedyCentHD",
+					"0219": "BT Sport 2 HD",
+					"0459": "YESTERDAY",
+					"0338": "Psychic Today",
+					"0217": "BT Sport//ESPN",
+					"0218": "Paramount",
+					"0339": "MTV",
+					"0350": "Club MTV",
+					"0230": "FRANCE 24 HD",
+					"0351": "ComedyXtra",
+					"0347": "MTV",
+					"0105": "ITV",
+					"0226": "BTSptBoxOffHD",
+					"0227": "XXX College",
+					"0348": "MTV MUSIC",
+					"0106": "ITV+1",
+					"0469": "Drama+1",
+					"0345": "MTV CLASSIC",
+					"0103": "ITV",
+					"0224": "BTSpt//ESPNHD",
+					"0346": "MTV OMG",
+					"0104": "ITV+1",
+					"0467": "Drama",
+					"0225": "BTSpt//ESPNHD",
+					"0343": "MTV HITS",
+					"0101": "ITVBe",
+					"0222": "BT Sport 2 HD",
+					"0344": "MTV BASE",
+					"0102": "ITV",
+					"0223": "BT Sport 3 HD",
+					"0462": "alibi",
+					"0341": "VH1 CHRISTMAS",
+					"0220": "BT Sport 2 HD",
+					"0342": "MTV+1",
+					"0463": "Drama",
+					"0221": "BT Sport 1 HD",
+					"0109": "CBeebies",
+					"0349": "MTV MUSIC+1",
+					"0107": "ETV1",
+					"0228": "BoXmas",
+					"0229": "S4C HD",
+					"0108": "BBC Four",
+					"0361": "SmartShop",
+					"0240": "NTV",
+					"0362": "Television X",
+					"0120": "CBBC",
+					"0241": "BEN",
+					"0360": "Cruise Channel",
+					"0358": "TVX Bangers",
+					"0237": "KISS",
+					"0116": "ETV5",
+					"0359": "TVX 40+",
+					"0238": "News18",
+					"0117": "CBBC",
+					"0356": "W+1",
+					"0114": "BBC RB 1",
+					"0235": "Adult Channel",
+					"0236": "Notts TV",
+					"0357": "DirtyTalk",
+					"0115": "6391",
+					"0354": "Kerrang!",
+					"0233": "FAME TV",
+					"0112": "BBC Four",
+					"0234": "Samaa",
+					"0355": "Channel 44",
+					"0113": "CBeebies",
+					"0352": "XXX Big&Bouncy",
+					"0231": "FreeSports HD",
+					"0110": "BBC One Lon",
+					"0353": "XXX Mums",
+					"0232": "QUEST HD",
+					"0111": "BBC Two",
+					"0118": "BBC NEWS",
+					"0239": "50255",
+					"0119": "ETV6"
+				}
+			}
+		},
+		{
 			"channelId": "avContent#ps_channel-dvbt",
 			"channelType": "scalarwebavcontrolpresetchannel",
 			"properties": {
@@ -1627,128 +1903,158 @@
 			"state": {
 				"readonly": false,
 				"options": {
-					"070": "7HD Brisbane",
-					"071": "7 Brisbane",
-					"072": "7TWO Brisbane",
-					"073": "7mate Brisbane",
-					"074": "7food network",
-					"075": "openshop",
-					"350": "ABC",
-					"351": "ABC HD",
-					"076": "7flix Brisbane",
-					"352": "ABC",
-					"078": "RACING.COM",
-					"353": "ABCComedy/Kids",
-					"354": "ABC ME",
-					"355": "ABC NEWS",
-					"356": "Double J",
-					"357": "ABC Jazz",
-					"358": "SBS ONE",
-					"359": "SBS ONE HD",
-					"080": "WIN HD Darling Downs",
-					"081": "BOLD Darling Downs",
-					"082": "PEACH Darling Downs",
-					"083": "Sky News on WIN",
-					"084": "TVSN",
-					"360": "SBS VICELAND HD",
-					"085": "GOLD",
-					"361": "SBS VICELAND",
-					"362": "Food Network",
-					"363": "NITV",
-					"364": "SBS Arabic24",
-					"001": "10 BOLD",
-					"365": "SBS Radio 1",
-					"002": "ABC",
-					"366": "SBS Radio 2",
-					"003": "SBS ONE",
-					"367": "SBS Chill",
-					"368": "SBS Radio 1",
-					"005": "Nine Toowoomba",
-					"369": "SBS Radio 2",
-					"006": "7HD Toowoomba",
-					"007": "7 Brisbane",
-					"008": "WIN Darling Downs",
-					"009": "Channel 9 Brisbane",
-					"090": "9HD Brisbane",
-					"091": "Channel 9 Brisbane",
-					"092": "9Gem Brisbane",
-					"093": "9Go! Brisbane",
-					"094": "9Life Brisbane",
-					"370": "SBS Radio 3",
-					"095": "9Gem HD Brisbane",
-					"371": "SBS Arabic24",
-					"372": "SBS PopDesi",
-					"373": "SBS Chill",
-					"010": "10",
-					"374": "SBS PopAsia",
-					"099": "9Go! Brisbane",
-					"011": "10 Peach",
-					"375": "Test Transmission",
-					"012": "10 BOLD",
-					"376": "ABC BRISBANE",
-					"013": "10 HD",
-					"014": "TVSN",
-					"377": "ABC RN",
-					"015": "SpreeTV",
-					"378": "ABC Classic",
-					"379": "triple j",
-					"380": "triple j Unearthed",
-					"381": "ABC KIDS Listen",
-					"382": "ABC Country",
-					"383": "ABC NewsRadio",
-					"020": "ABC HD",
-					"021": "ABC",
-					"384": "384",
-					"022": "ABCComedy/Kids",
-					"385": "385",
-					"023": "ABC ME",
-					"386": "386",
-					"024": "ABC NEWS",
-					"387": "387",
-					"025": "ABC BRISBANE",
-					"388": "388",
-					"301": "SBS Radio 1",
-					"026": "ABC RN",
-					"389": "389",
-					"302": "SBS Radio 2",
-					"027": "ABC Classic",
-					"028": "triple j",
-					"303": "SBS Radio 3",
-					"029": "triple j Unearthed",
-					"304": "SBS Arabic24",
-					"305": "SBS PopDesi",
-					"306": "SBS Chill",
-					"307": "SBS PopAsia",
-					"390": "390",
-					"391": "391",
-					"030": "SBS ONE HD",
-					"031": "SBS VICELAND HD",
-					"032": "SBS World Movies",
-					"033": "SBS Food",
-					"034": "NITV",
-					"036": "SBS Arabic24",
-					"037": "SBS Radio 1",
-					"038": "SBS Radio 2",
-					"039": "SBS Chill",
-					"200": "Double J",
-					"201": "ABC Jazz",
-					"202": "ABC KIDS Listen",
-					"203": "ABC Country",
-					"204": "ABC NewsRadio",
-					"050": "9HD Toowoomba",
-					"051": "Nine Toowoomba",
-					"052": "9Gem",
-					"053": "9Go!",
-					"054": "9Life",
-					"055": "SBN",
-					"056": "Aspire",
-					"060": "7HD Toowoomba",
-					"061": "7HD Toowoomba",
-					"062": "7TWO Toowoomba",
-					"063": "7mate Toowoomba",
-					"064": "7food network",
-					"066": "7flix Toowoomba",
-					"068": "RACING.COM"
+					"070": "Horror Channel",
+					"071": "CBS Drama",
+					"072": "YourTV",
+					"073": "YourTV+1",
+					"074": "The Store",
+					"076": "Jewellery Maker",
+					"077": "TCC",
+					"231": "BBC NEWS",
+					"078": "Sewing Quarter",
+					"232": "BBC Parliament",
+					"233": "Sky News",
+					"079": "Dave ja vu",
+					"234": "RT",
+					"080": "Blaze+1",
+					"081": "TalkingPictures TV",
+					"083": "QUEST+1",
+					"085": "Hochanda",
+					"001": "BBC ONE S East",
+					"002": "BBC TWO",
+					"003": "ITV",
+					"004": "Channel 4",
+					"005": "Channel 5",
+					"006": "ITV2",
+					"800": "ITV3",
+					"801": "Sewing Quarter",
+					"009": "BBC FOUR",
+					"802": "Film4+1",
+					"250": "BBC Red Button",
+					"251": "365 Travel",
+					"252": "Kiss Me TV",
+					"010": "ITV3",
+					"253": "Proud Dating",
+					"011": "Pick",
+					"012": "Dave",
+					"013": "Channel 4+1",
+					"014": "More 4",
+					"015": "Film4",
+					"016": "QVC",
+					"017": "Really",
+					"018": "4Music",
+					"019": "Yesterday",
+					"260": "CCTV",
+					"261": "Racing UK",
+					"020": "Drama",
+					"262": "CONNECT 4",
+					"263": "Sonlife",
+					"021": "5 USA",
+					"264": "VisionTV",
+					"022": "Ideal World",
+					"265": "Planet Knowledge",
+					"023": "Create & Craft",
+					"024": "ITV4",
+					"025": "Home",
+					"026": "ITVBe",
+					"268": "Box Nation",
+					"027": "ITV2 +1",
+					"269": "Arise News",
+					"028": "E4",
+					"029": "E4+1",
+					"700": "BBC Radio 1",
+					"701": "BBC R1X",
+					"702": "BBC Radio 2",
+					"703": "BBC Radio 3",
+					"704": "BBC Radio 4",
+					"705": "BBC R5L",
+					"706": "BBC R5SX",
+					"707": "BBC 6 Music",
+					"708": "BBC Radio 4 Ex",
+					"709": "BBC Asian Net.",
+					"270": "Loveworld",
+					"271": "Juwelo UK",
+					"030": "5STAR",
+					"273": "Sports Channel Network",
+					"031": "5Spike",
+					"032": "Sony Movie Ch",
+					"274": "Asia TV",
+					"670": "ADULT Section",
+					"671": "Television X",
+					"033": "ITV +1",
+					"793": "Quest Red+1",
+					"034": "ITV3+1",
+					"672": "ADULT smileTV2",
+					"035": "QVC Beauty",
+					"673": "ADULT smileTV3",
+					"036": "QVC Style",
+					"674": "ADULT Babestn",
+					"037": "QUEST",
+					"675": "ADULT Party",
+					"038": "Quest Red",
+					"039": "CBS Action",
+					"710": "BBC World Sv.",
+					"711": "The Hits Radio",
+					"678": "ADULT Xpanded TV",
+					"712": "KISS FRESH",
+					"679": "ADULT Studio 66",
+					"713": "KISS",
+					"714": "KISSTORY",
+					"715": "Magic",
+					"716": "heat",
+					"717": "Kerrang!",
+					"718": "Smooth Radio",
+					"719": "BBC Kent",
+					"041": "Food Network",
+					"042": "Travel Channel",
+					"043": "Gems TV",
+					"044": "Channel 5+1",
+					"045": "Film4+1",
+					"046": "Challenge",
+					"201": "CBBC",
+					"047": "4seven",
+					"048": "movies4men",
+					"202": "CBeebies",
+					"049": "TJC",
+					"203": "CITV",
+					"720": "BBC Sussex",
+					"204": "CBBC HD",
+					"721": "BBC Radio London",
+					"722": "BBC Surrey",
+					"601": "BBC RB 1",
+					"723": "talkSPORT",
+					"206": "POP",
+					"724": "Capital",
+					"725": "Premier Radio",
+					"727": "Absolute Radio",
+					"728": "Heart",
+					"054": "5SELECT",
+					"211": "Ketchup TV",
+					"695": "695",
+					"058": "ITVBe+1",
+					"696": "696",
+					"730": "RNIB Connect",
+					"059": "ITV4+1",
+					"697": "697",
+					"731": "Classic FM",
+					"698": "698",
+					"732": "LBC",
+					"699": "ADULT Section",
+					"734": "BBC Essex",
+					"060": "Sony Crime Channel",
+					"061": "True Entertainment",
+					"062": "True Movies",
+					"063": "Blaze",
+					"065": "TBN UK",
+					"066": "CBS Reality",
+					"100": "Freeview",
+					"068": "truTV",
+					"101": "BBC ONE HD",
+					"069": "truTV+1",
+					"102": "BBC TWO HD",
+					"103": "ITV HD",
+					"104": "Channel 4 HD",
+					"105": "Channel 5 HD"
 				}
 			}
 		},
@@ -1814,7 +2120,23 @@
 				"channelId": "main",
 				"prop-0": "main"
 			},
-			"state": {}
+			"state": {
+				"readonly": false,
+				"options": {
+					"extInput:hdmi?port=1": "HDMI 1",
+					"tv:dvbt": "tv:dvbt",
+					"tv:dvbs": "tv:dvbs",
+					"extInput:hdmi?port=4": "HDMI 4/ARC",
+					"extInput:cec?type=freeuse&port=4&logicalAddr=5": "Receiver",
+					"extInput:component?port=1": "AV 2/Component",
+					"extInput:hdmi?port=2": "HDMI 2/MHL",
+					"extInput:hdmi?port=3": "HDMI 3",
+					"extInput:scart?port=1": "AV 1",
+					"extInput:cec?type=player&port=2&logicalAddr=4": "Roku",
+					"extInput:cec?type=player&port=4&logicalAddr=8": "BD-Theater",
+					"extInput:widi?port=1": "Screen mirroring"
+				}
+			}
 		},
 		{
 			"channelId": "avContent#tm_title-main",
