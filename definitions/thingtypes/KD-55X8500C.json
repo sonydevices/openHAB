@@ -1,0 +1,1547 @@
+{
+	"service": "scalar",
+	"configUri": "thing-type:sony:scalarconfig",
+	"modelName": "KD-55X8500C",
+	"label": "Sony TV Scalar",
+	"description": "Sony Scalar Web",
+	"channelGroups": {
+		"cec": "CEC",
+		"accessControl": "Access Control",
+		"system": "System",
+		"appControl": "Application Control",
+		"encryption": "Encryption",
+		"browser": "Browser",
+		"audio": "Audio",
+		"avContent": "A/V Content",
+		"videoScreen": "Video Screen",
+		"contentshare": "Content Share",
+		"guide": "Guide"
+	},
+	"channels": [
+		{
+			"channelId": "audio#mute-headphone",
+			"channelType": "scalaraudiomute",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "mute",
+				"channelId": "headphone",
+				"prop-0": "headphone"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "audio#mute-speaker",
+			"channelType": "scalaraudiomute",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "mute",
+				"channelId": "speaker",
+				"prop-0": "speaker"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "audio#volume-headphone",
+			"channelType": "scalaraudiovolume",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "volume",
+				"channelId": "headphone",
+				"prop-0": "headphone"
+			},
+			"state": {
+				"step": 1,
+				"minimum": 0,
+				"maximum": 100,
+				"readonly": false,
+				"options": {}
+			}
+		},
+		{
+			"channelId": "audio#volume-speaker",
+			"channelType": "scalaraudiovolume",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "volume",
+				"channelId": "speaker",
+				"prop-0": "speaker"
+			},
+			"state": {
+				"step": 1,
+				"minimum": 0,
+				"maximum": 100,
+				"readonly": false,
+				"options": {}
+			}
+		},
+		{
+			"channelId": "avContent#cn_audiochannel",
+			"channelType": "scalarwebavcontrolcontentaudiochannel",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_audiochannel",
+				"channelId": "cn_audiochannel"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_audiocodec",
+			"channelType": "scalarwebavcontrolcontentaudiocodec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_audiocodec",
+				"channelId": "cn_audiocodec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_audiofrequency",
+			"channelType": "scalarwebavcontrolcontentaudiofrequency",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_audiofrequency",
+				"channelId": "cn_audiofrequency"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_channelname",
+			"channelType": "scalarwebavcontrolcontentchannelname",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_channelname",
+				"channelId": "cn_channelname"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_channelsurfingvisibility",
+			"channelType": "scalarwebavcontrolcontentchannelsurfingvisibility",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_channelsurfingvisibility",
+				"channelId": "cn_channelsurfingvisibility"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_chaptercount",
+			"channelType": "scalarwebavcontrolcontentchaptercount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_chaptercount",
+				"channelId": "cn_chaptercount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_childcount",
+			"channelType": "scalarwebavcontrolcontentchildcount",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_childcount",
+				"channelId": "cn_childcount"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_contenttype",
+			"channelType": "scalarwebavcontrolcontentcontenttype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_contenttype",
+				"channelId": "cn_contenttype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_createdtime",
+			"channelType": "scalarwebavcontrolcontentcreatedtime",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_createdtime",
+				"channelId": "cn_createdtime"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_directremotenum",
+			"channelType": "scalarwebavcontrolcontentdirectremotenum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_directremotenum",
+				"channelId": "cn_directremotenum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_dispnum",
+			"channelType": "scalarwebavcontrolcontentdispnum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_dispnum",
+				"channelId": "cn_dispnum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_durationsec",
+			"channelType": "scalarwebavcontrolcontentdurationsec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_durationsec",
+				"channelId": "cn_durationsec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_epgvisibility",
+			"channelType": "scalarwebavcontrolcontentepgvisibility",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_epgvisibility",
+				"channelId": "cn_epgvisibility"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_filesizebyte",
+			"channelType": "scalarwebavcontrolcontentfilesizebyte",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_filesizebyte",
+				"channelId": "cn_filesizebyte"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_idx",
+			"channelType": "scalarwebavcontrolcontentidx",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_idx",
+				"channelId": "cn_idx"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isalreadyplayed",
+			"channelType": "scalarwebavcontrolcontentisalreadyplayed",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isalreadyplayed",
+				"channelId": "cn_isalreadyplayed"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_isprotected",
+			"channelType": "scalarwebavcontrolcontentisprotected",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_isprotected",
+				"channelId": "cn_isprotected"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_originaldispnum",
+			"channelType": "scalarwebavcontrolcontentoriginaldispnum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_originaldispnum",
+				"channelId": "cn_originaldispnum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentalcountry",
+			"channelType": "scalarwebavcontrolcontentparentalcountry",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentalcountry",
+				"channelId": "cn_parentalcountry"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentalrating",
+			"channelType": "scalarwebavcontrolcontentparentalrating",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentalrating",
+				"channelId": "cn_parentalrating"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parentalsystem",
+			"channelType": "scalarwebavcontrolcontentparentalsystem",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parentalsystem",
+				"channelId": "cn_parentalsystem"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_parenturi",
+			"channelType": "scalarwebavcontrolcontentparenturi",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_parenturi",
+				"channelId": "cn_parenturi"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_productid",
+			"channelType": "scalarwebavcontrolcontentproductid",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_productid",
+				"channelId": "cn_productid"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_programmediatype",
+			"channelType": "scalarwebavcontrolcontentprogrammediatype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_programmediatype",
+				"channelId": "cn_programmediatype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_programnum",
+			"channelType": "scalarwebavcontrolcontentprogramnum",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_programnum",
+				"channelId": "cn_programnum"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_selected",
+			"channelType": "scalarwebavcontrolcontentselected",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_selected",
+				"channelId": "cn_selected"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_sizemb",
+			"channelType": "scalarwebavcontrolcontentsizemb",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_sizemb",
+				"channelId": "cn_sizemb"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_startdatetime",
+			"channelType": "scalarwebavcontrolcontentstartdatetime",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_startdatetime",
+				"channelId": "cn_startdatetime"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_storageuri",
+			"channelType": "scalarwebavcontrolcontentstorageuri",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_storageuri",
+				"channelId": "cn_storageuri"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_subtitlelanguage",
+			"channelType": "scalarwebavcontrolcontentsubtitlelanguage",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_subtitlelanguage",
+				"channelId": "cn_subtitlelanguage"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_subtitletitle",
+			"channelType": "scalarwebavcontrolcontentsubtitletitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_subtitletitle",
+				"channelId": "cn_subtitletitle"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_title",
+			"channelType": "scalarwebavcontrolcontenttitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_title",
+				"channelId": "cn_title"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_tripletstr",
+			"channelType": "scalarwebavcontrolcontenttripletstr",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_tripletstr",
+				"channelId": "cn_tripletstr"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_uri",
+			"channelType": "scalarwebavcontrolcontenturi",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_uri",
+				"channelId": "cn_uri"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_usercontentflag",
+			"channelType": "scalarwebavcontrolcontentusercontentflag",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_usercontentflag",
+				"channelId": "cn_usercontentflag"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_videocodec",
+			"channelType": "scalarwebavcontrolcontentvideocodec",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_videocodec",
+				"channelId": "cn_videocodec"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#cn_visibility",
+			"channelType": "scalarwebavcontrolcontentvisibility",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "cn_visibility",
+				"channelId": "cn_visibility"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-component1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "component1",
+				"prop-0": "extInput:component?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-composite1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_connection-widi1",
+			"channelType": "scalarwebavcontrolinpstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_connection",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-component1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "component1",
+				"prop-0": "extInput:component?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-composite1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_icon-widi1",
+			"channelType": "scalarwebavcontrolinpstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_icon",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-component1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "component1",
+				"prop-0": "extInput:component?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-composite1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_label-widi1",
+			"channelType": "scalarwebavcontrolinpstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_label",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-component1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "component1",
+				"prop-0": "extInput:component?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-composite1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_status-widi1",
+			"channelType": "scalarwebavcontrolinpstatusstatus",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_status",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-component1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "component1",
+				"prop-0": "extInput:component?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-composite1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_title-widi1",
+			"channelType": "scalarwebavcontrolinpstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_title",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-component1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "component1",
+				"prop-0": "extInput:component?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-composite1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "composite1",
+				"prop-0": "extInput:composite?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi1",
+				"prop-0": "extInput:hdmi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi2",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi2",
+				"prop-0": "extInput:hdmi?port=2"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi3",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi3",
+				"prop-0": "extInput:hdmi?port=3"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-hdmi4",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "hdmi4",
+				"prop-0": "extInput:hdmi?port=4"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#in_uri-widi1",
+			"channelType": "scalarwebavcontrolinpstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "in_uri",
+				"channelId": "widi1",
+				"prop-0": "extInput:widi?port=1"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_bivlassetid-Main",
+			"channelType": "scalarwebavcontrolplbivlassetid",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_bivlassetid",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_bivlprovider-Main",
+			"channelType": "scalarwebavcontrolplbivlprovider",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_bivlprovider",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_bivlserviceid-Main",
+			"channelType": "scalarwebavcontrolplbivlserviceid",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_bivlserviceid",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_cmd-Main",
+			"channelType": "scalarwebavcontrolplcommand",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_cmd",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_dispnum-Main",
+			"channelType": "scalarwebavcontrolpldispnum",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_dispnum",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_durationsec-Main",
+			"channelType": "scalarwebavcontrolpldurationsec",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_durationsec",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_mediatype-Main",
+			"channelType": "scalarwebavcontrolplmediatype",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_mediatype",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_originaldispnum-Main",
+			"channelType": "scalarwebavcontrolploriginaldispnum",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_originaldispnum",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_playspeed-Main",
+			"channelType": "scalarwebavcontrolplplayspeed",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_playspeed",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_presetid-Main",
+			"channelType": "scalarwebavcontrolplpreset",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_presetid",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_programnum-Main",
+			"channelType": "scalarwebavcontrolplprogramnum",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_programnum",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_programtitle-Main",
+			"channelType": "scalarwebavcontrolplprogramtitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_programtitle",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_source-Main",
+			"channelType": "scalarwebavcontrolplsource",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_source",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_startdatetime-Main",
+			"channelType": "scalarwebavcontrolplstartdatetime",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_startdatetime",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_title-Main",
+			"channelType": "scalarwebavcontrolpltitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_title",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_tripletstr-Main",
+			"channelType": "scalarwebavcontrolpltripletstr",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_tripletstr",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pl_uri-Main",
+			"channelType": "scalarwebavcontrolpluri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "pl_uri",
+				"channelId": "Main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcountry",
+			"channelType": "scalarwebavcontrolprratingcountry",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcountry",
+				"channelId": "pr_ratingcountry"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypecaenglish",
+			"channelType": "scalarwebavcontrolprratingcustomtypecaenglish",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypecaenglish",
+				"channelId": "pr_ratingcustomtypecaenglish"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypecafrench",
+			"channelType": "scalarwebavcontrolprratingcustomtypecafrench",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypecafrench",
+				"channelId": "pr_ratingcustomtypecafrench"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypempaa",
+			"channelType": "scalarwebavcontrolprratingcustomtypempaa",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypempaa",
+				"channelId": "pr_ratingcustomtypempaa"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingcustomtypetv",
+			"channelType": "scalarwebavcontrolprratingcustomtypetv",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingcustomtypetv",
+				"channelId": "pr_ratingcustomtypetv"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingtypeage",
+			"channelType": "scalarwebavcontrolprratingtypeage",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingtypeage",
+				"channelId": "pr_ratingtypeage"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_ratingtypesony",
+			"channelType": "scalarwebavcontrolprratingtypesony",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_ratingtypesony",
+				"channelId": "pr_ratingtypesony"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#pr_unratedlock",
+			"channelType": "scalarwebavcontrolprunratedlock",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pr_unratedlock",
+				"channelId": "pr_unratedlock"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#ps_channel-dvbt",
+			"channelType": "scalarwebavcontrolpresetchannel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "ps_channel",
+				"channelId": "dvbt",
+				"prop-0": "tv:dvbt"
+			},
+			"state": {
+				"readonly": false,
+				"options": {
+					"090": "9HD Melbourne",
+					"091": "Channel 9 Melbourne",
+					"092": "9Gem",
+					"070": "7HD Melbourne",
+					"093": "9Go!",
+					"071": "7 Melbourne",
+					"094": "9Life",
+					"072": "7TWO Melbourne",
+					"095": "Extra",
+					"073": "7mate Melbourne",
+					"030": "SBS HD",
+					"010": "TEN Digital",
+					"032": "SBS VICELAND",
+					"076": "7flix Melbourne",
+					"033": "Food Network",
+					"011": "ELEVEN",
+					"099": "9Go!",
+					"078": "RACING.COM",
+					"012": "ONE",
+					"034": "NITV",
+					"013": "TEN HD",
+					"014": "TVSN",
+					"015": "SpreeTV",
+					"037": "SBS Radio 1",
+					"038": "SBS Radio 2",
+					"039": "SBS Radio 3",
+					"020": "ABC HD",
+					"021": "ABC",
+					"044": "C31",
+					"022": "ABC2/KIDS",
+					"001": "ONE",
+					"023": "ABC ME",
+					"200": "Double J",
+					"024": "ABC News 24",
+					"002": "ABC",
+					"003": "SBS ONE",
+					"201": "ABC Jazz",
+					"007": "7 Melbourne",
+					"009": "Channel 9 Melbourne"
+				}
+			}
+		},
+		{
+			"channelId": "avContent#schemes",
+			"channelType": "scalarwebavcontrolschemes",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "schemes",
+				"channelId": "schemes"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#sources",
+			"channelType": "scalarwebavcontrolsources",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "sources",
+				"channelId": "sources"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_connection-main",
+			"channelType": "scalarwebavcontroltermstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_connection",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_icon-main",
+			"channelType": "scalarwebavcontroltermstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_icon",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_label-main",
+			"channelType": "scalarwebavcontroltermstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_label",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_source-main",
+			"channelType": "scalarwebavcontroltermstatussource",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_source",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_title-main",
+			"channelType": "scalarwebavcontroltermstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_title",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_uri-main",
+			"channelType": "scalarwebavcontroltermstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_uri",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#browsercontrol",
+			"channelType": "scalarbrowseractivate",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "browsercontrol",
+				"channelId": "browsercontrol"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#textfavicon",
+			"channelType": "scalarbrowsertextfavicon",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "textfavicon",
+				"channelId": "textfavicon"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#texttitle",
+			"channelType": "scalarbrowsertexttitle",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "texttitle",
+				"channelId": "texttitle"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#texttype",
+			"channelType": "scalarbrowsertexttype",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "texttype",
+				"channelId": "texttype"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "browser#texturl",
+			"channelType": "scalarbrowsertexturl",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "texturl",
+				"channelId": "texturl"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#controlmode",
+			"channelType": "scalarceccontrolmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "controlmode",
+				"channelId": "controlmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#mhlautoinputchangemode",
+			"channelType": "scalarcecmhlautoinputchangemode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "mhlautoinputchangemode",
+				"channelId": "mhlautoinputchangemode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#mhlpowerfeedmode",
+			"channelType": "scalarcecmhlpowerfeedmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "mhlpowerfeedmode",
+				"channelId": "mhlpowerfeedmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#poweroffsyncmode",
+			"channelType": "scalarcecpoweroffsyncmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "poweroffsyncmode",
+				"channelId": "poweroffsyncmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "cec#poweronsyncmode",
+			"channelType": "scalarcecpoweronsyncmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "poweronsyncmode",
+				"channelId": "poweronsyncmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#currenttime",
+			"channelType": "scalarsystemcurrenttime",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "currenttime",
+				"channelId": "currenttime"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#language",
+			"channelType": "scalarsystemlanguage",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "language",
+				"channelId": "language"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#ledindicatorstatus",
+			"channelType": "scalarsystemledindicatorstatus",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "ledindicatorstatus",
+				"channelId": "ledindicatorstatus"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#powersavingmode",
+			"channelType": "scalarsystempowersavingmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "powersavingmode",
+				"channelId": "powersavingmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#powerstatus",
+			"channelType": "scalarsystempowerstatus",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "powerstatus",
+				"channelId": "powerstatus"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#reboot",
+			"channelType": "scalarsystemreboot",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "reboot",
+				"channelId": "reboot"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#sysCmd",
+			"channelType": "scalarsystemircc",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "sysCmd",
+				"channelId": "sysCmd"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#wolmode",
+			"channelType": "scalarsystemwolmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "wolmode",
+				"channelId": "wolmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#audiosource",
+			"channelType": "scalarvideoscreenaudiosource",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "audiosource",
+				"channelId": "audiosource"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#bannermode",
+			"channelType": "scalarvideoscreenbannermode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "bannermode",
+				"channelId": "bannermode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#multiscreenmode",
+			"channelType": "scalarvideoscreenmultiscreenmode",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "multiscreenmode",
+				"channelId": "multiscreenmode"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#pipsubscreenposition",
+			"channelType": "scalarvideoscreenpipsubscreenposition",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "pipsubscreenposition",
+				"channelId": "pipsubscreenposition"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#scenesetting",
+			"channelType": "scalarvideoscreenscenesetting",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "scenesetting",
+				"channelId": "scenesetting"
+			},
+			"state": {}
+		}
+	]
+}

@@ -1,0 +1,111 @@
+{
+	"service": "scalar",
+	"configUri": "thing-type:sony:scalarconfig",
+	"modelName": "KD-49X8505B",
+	"label": "Sony BRAVIA_TV",
+	"description": "Sony Scalar Web",
+	"channelGroups": {
+		"cec": "CEC",
+		"accessControl": "Access Control",
+		"system": "System",
+		"appControl": "Application Control",
+		"encryption": "Encryption",
+		"browser": "Browser",
+		"audio": "Audio",
+		"avContent": "A/V Content",
+		"videoScreen": "Video Screen",
+		"contentshare": "Content Share",
+		"guide": "Guide"
+	},
+	"channels": [
+		{
+			"channelId": "avContent#tm_connection-main",
+			"channelType": "scalarwebavcontroltermstatusconnection",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_connection",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_icon-main",
+			"channelType": "scalarwebavcontroltermstatusicon",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_icon",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_label-main",
+			"channelType": "scalarwebavcontroltermstatuslabel",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_label",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_source-main",
+			"channelType": "scalarwebavcontroltermstatussource",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_source",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {
+				"readonly": false,
+				"options": {}
+			}
+		},
+		{
+			"channelId": "avContent#tm_title-main",
+			"channelType": "scalarwebavcontroltermstatustitle",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_title",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "avContent#tm_uri-main",
+			"channelType": "scalarwebavcontroltermstatusuri",
+			"properties": {
+				"propLen": "1",
+				"channelCategory": "tm_uri",
+				"channelId": "main",
+				"prop-0": "main"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "system#sysCmd",
+			"channelType": "scalarsystemircc",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "sysCmd",
+				"channelId": "sysCmd"
+			},
+			"state": {}
+		},
+		{
+			"channelId": "videoScreen#scenesetting",
+			"channelType": "scalarvideoscreenscenesetting",
+			"properties": {
+				"propLen": "0",
+				"channelCategory": "scenesetting",
+				"channelId": "scenesetting"
+			},
+			"state": {}
+		}
+	]
+}
