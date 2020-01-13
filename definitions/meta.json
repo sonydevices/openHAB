@@ -1,13 +1,23 @@
 {
-	"ignore": [],
-	"convert": [
+	"ignoreModelName": [],
+	"ignoreChannelId": [
+		"avContent#in_.*-cec.*",
+		"avContent#tm_.*-cec.*"
+	],
+	"modelNameConvert": [
 		{
-			"modelName": "TV Schlafzimmer",
-			"convName": "KD-43XD8005"
+			"oldName": "TV Schlafzimmer",
+			"newName": "KD-43XD8005"
 		},
 		{
-			"modelName": "BRAVIA-DK",
-			"convName": "KD-49X8505B"
+			"oldName": "BRAVIA-DK",
+			"newName": "KD-49X8505B"
 		}
+	],
+	"channelIdConvert": [
+		{
+			"oldName": "avContent#cn_selected",
+			"newName": "avContent#cn_cmd"
+		},
 	]
 }
